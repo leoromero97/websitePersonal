@@ -8,39 +8,76 @@
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="./img/leo-codeversity.jpeg">
+  <meta property="og:image" content="img/leo-codeversity.jpeg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Leo Romero - Inicio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <p>Logo</p>
-      <ul>
-        <li>
+  <header class="header">
+    <a href="" class="containerLogo">
+      <p title="Logo">Logo</p>
+    </a>
+    <nav class="links">
+      <ul class="listMenu">
+        <li class="item activeLink">
           <a href="./index.html">Inicio</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="./pages/about-me.html">Sobre mí</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="./pages/projects.html">Proyectos</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="./pages/tools.html">Herramientas</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="./pages/lets-work-together.html">Trabajemos juntos</a>
         </li>
       </ul>
     </nav>
+    <div class="containerBurger">
+      <div class="burger">
+        <div class="lineOne"></div>
+        <div class="lineTwo"></div>
+        <div class="lineThree"></div>
+      </div>
+    </div>
   </header>
   <main>
-    <div>
-      <h1>Hola! Soy Leo Romero, desarrollador frontend y diseñador ux/ui</h1>
-      <button>Contactame</button>
-      <img src="./img/leo-codeversity.jpeg" alt="Foto de Leo Romero" height="120px" width="100px">
-    </div>
-    <div>
+    <section class="heroContainer">
+      <img src="img/leoFace.png" alt="Foto de Leo Romero" class="heroImage">
+      <h1 class="h2Mobile heroTitle">👋 ¡Hola! Soy Leo Romero</h1>
+      <div class="heroCarouselContainer">
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Diseño landing page</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Diseño aplicación móvil</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Diseño de flyers para Redes Sociales</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Diseño de Marca</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Diseño de Logotipo</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Desarrollo de landing page</p>
+        </div>
+        <div class="heroCardService">
+          <p class="heroCardServiceText">Desarrollo de sitio web con Wordpress</p>
+        </div>
+      </div>
+      <p class="subtitle heroDescription">¿Tenes una idea para diseñar o desarrollar?</p>
+      <button class="buttonPrimary">Contactame</button>
+    </section>
+    <section>
       <h2>Introducción</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et quo ut natus tempora 
@@ -52,23 +89,36 @@
         omnis reprehenderit culpa dicta consequuntur! Quibusdam mollitia illum nobis. Repudiandae quam officia 
         harum ullam perspiciatis inventore?
       </p>
-    </div>
+    </section>
   </main>
-  <footer>
-    <p>Logo</p>
-    <div>
-      <a href="https://github.com/leoromero97">GitHub</a>
-      <a href="https://www.linkedin.com/in/leonardogerbacioromero/">Linkedin</a>
-      <a href="https://www.behance.net/leonardogromero">Behance</a>
-      <a href="https://www.instagram.com/leo.romerooo/">Instagram</a>
+  <footer class="footer">
+    <p class="footerLogo">Logo</p>
+    <div class="footerContainerExternalLinks">
+      <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
+        <img src="icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+      </a>
+      <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" class="footerContainerIcon">
+        <img src="icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+      </a>
+      <a href="https://www.behance.net/leonardogromero" title="Behance link" class="footerContainerIcon">
+        <img src="icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+      </a>
+      <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" class="footerContainerIcon">
+        <img src="icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+      </a>
     </div>
-    <div>
-      <div>
-        <img src="./icons/Icon-Location.svg" alt="Icono de ubicación">
+    <div class="footerContainerInformation">
+      <p class="footerMessage">Desarrollemos y creemos juntos</p>
+      <div class="footerInformation">
+        <img src="icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación">
         <p>Buenos Aires, Argentina</p>
       </div>
-      <a href="mailto:leonardogerbacio@gmail.com">leonardogerbacio@gmail.com</a>
+      <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
+        <img src="icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <p>leonardogerbacio@gmail.com</p>
+      </a>
     </div>
+    <p class="footerCopyRight">Creado por Leonardo Esteban Gerbacio Romero &COPY; 2022</p>
   </footer>
 </body>
 </html>
