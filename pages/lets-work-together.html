@@ -8,63 +8,79 @@
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="../img/leo-codeversity.jpeg">
+  <meta property="og:image" content="../img/leoFace.png">
   <link rel="stylesheet" href="../main.css">
+  <link rel="icon" href="../img/leoFace.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Leo Romero - Trabajemos juntos</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <p>Logo</p>
-      <ul>
-        <li>
+  <header class="header">
+    <a href="" class="containerLogo">
+      <p title="Logo">Logo</p>
+    </a>
+    <nav class="links">
+      <ul class="listMenu">
+        <li class="item activeLink">
           <a href="../index.html">Inicio</a>
         </li>
-        <li>
-          <a href="./about-me.html">Sobre mí</a>
+        <li class="item activeLink">
+          <a href="../pages/about-me.html">Sobre mí</a>
         </li>
-        <li>
-          <a href="../pages/projects.html">Proyectos</a>
+        <li class="item activeLink">
+          <a href="./projects.html">Proyectos</a>
         </li>
-        <li>
-          <a href="../pages/tools.html">Servicios</a>
+        <li class="item activeLink">
+          <a href="../pages/services.html">Servicios</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="../pages/lets-work-together.html">Trabajemos juntos</a>
         </li>
       </ul>
     </nav>
+    <div class="containerBurger">
+      <div class="burger">
+        <div class="lineOne"></div>
+        <div class="lineTwo"></div>
+        <div class="lineThree"></div>
+      </div>
+    </div>
   </header>
   <main>
-    <h2>¿Tenés un proyecto en mente?</h2>
-    <h1>Trabajemos juntos</h1>
-    <form method="post">
-      <div>
-        <label for="name">Nombre</label>
-        <input type="text" name="name">
+    <section class="letsWorkContainer">
+      <div class="letsWorkContainerTitle mb-4">
+        <span class="h1Mobile">💡</span>
+        <h1 class="h1Mobile">¿Tenes un proyecto en mente?</h1>
       </div>
-      <label for="project">Tipo de proyecto</label>
-      <select name="project">
-        <option value="landing">Desarrollo de landing page</option>
-        <option value="webApp">Desarrollo de Aplicación Web</option>
-        <option value="androidApp">Desarrollo de Aplicación Android</option>
-        <option value="designApp">Diseño de Aplicación Móvil</option>
-        <option value="designLanding">Diseño de landing page</option>
-        <option value="designWebApp">Diseño de Aplicación Web</option>
-        <option value="branding">Diseño de Manual de Marca</option>
-        <option value="reBranding">Re Diseño de Marca</option>
-        <option value="designLogo">Diseño de Logotipo</option>
-      </select>
-      <div>
-        <label for="description">Breve descripción</label>
-        <input type="text" name="description">
+      <div class="letsWorkContainerSlogan mb-3">
+        <h2 class="h2Mobile slogan">Trabajemos juntos</h2>
       </div>
-      <input type="submit" value="Enviar">
-    </form>
+      <form method="post" class="form"> 
+        <div class="formInput">
+          <label for="name" class="label">Nombre</label>
+          <input type="text" name="name" class="input">
+        </div>
+        <div class="formInput">
+          <label for="phone" class="label">Número de teléfono</label>
+          <input type="number" name="phone" class="input">
+        </div>
+        <div class="formInput mb-3">
+          <label for="description" class="label">Descripción del proyecto</label>
+          <input type="text" name="description" class="input">
+        </div>
+  
+        <input type="submit" value="Enviar" class="buttonSecondary">
+      </form>
+    </section>
   </main>
   <footer class="footer">
-    <p class="footerLogo">Logo</p>
-    <div class="footerContainerExternalLinks">
+    <p class="footerLogo mb-3">Logo</p>
+    <p class="h2Mobile footerMessage mb-3">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerCTA">
+      <button class="buttonPrimary mb-1">Contactar</button>
+      <button class="buttonSecondary mb-3">Descargar CV</button>
+    </div>
+    <div class="footerContainerExternalLinks mb-3">
       <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
         <img src="../icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
       </a>
@@ -78,14 +94,13 @@
         <img src="../icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
       </a>
     </div>
-    <div class="footerContainerInformation">
-      <p class="footerMessage">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerInformation mb-3">
       <div class="footerInformation">
-        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>Buenos Aires, Argentina</p>
       </div>
       <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>leonardogerbacio@gmail.com</p>
       </a>
     </div>
