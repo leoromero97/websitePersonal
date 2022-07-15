@@ -8,63 +8,177 @@
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="../img/leo-codeversity.jpeg">
+  <meta property="og:image" content="../img/leoFace.png">
   <link rel="stylesheet" href="../main.css">
+  <link rel="icon" href="../img/leoFace.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Leo Romero - Proyectos</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <p>Logo</p>
-      <ul>
-        <li>
+  <header class="header">
+    <a href="" class="containerLogo">
+      <p title="Logo">Logo</p>
+    </a>
+    <nav class="links">
+      <ul class="listMenu">
+        <li class="item activeLink">
           <a href="../index.html">Inicio</a>
         </li>
-        <li>
-          <a href="./about-me.html">Sobre mí</a>
+        <li class="item activeLink">
+          <a href="../pages/about-me.html">Sobre mí</a>
         </li>
-        <li>
-          <a href="../pages/projects.html">Proyectos</a>
+        <li class="item activeLink">
+          <a href="./projects.html">Proyectos</a>
         </li>
-        <li>
-          <a href="../pages/tools.html">Servicios</a>
+        <li class="item activeLink">
+          <a href="../pages/services.html">Servicios</a>
         </li>
-        <li>
+        <li class="item activeLink">
           <a href="../pages/lets-work-together.html">Trabajemos juntos</a>
         </li>
       </ul>
     </nav>
+    <div class="containerBurger">
+      <div class="burger">
+        <div class="lineOne"></div>
+        <div class="lineTwo"></div>
+        <div class="lineThree"></div>
+      </div>
+    </div>
   </header>
   <main>
-    <h1>Projectos</h1>
-    <div>
-      <h2>reparteAR</h2>
-      <img src="../img/desktop-image.png" alt="Bloque de imagen" height="420px" width="300px">
-      <p>
-        Desarrollo y diseño de landing page
-      </p>
-      <p>10/2020 - Argentina</p>
-    </div>
-    <div>
-      <h2>EmpreBa</h2>
-      <img src="../img/desktop-image.png" alt="Bloque de imagen" height="420px" width="300px">
-      <p>
-        Diseño de aplicación móvil
-      </p>
-      <p>05/2022 - Argentina</p>
-    </div>
-    <div>
-      <h2>Florencia Gordillo</h2>
-      <img src="../img/desktop-image.png" alt="Bloque de imagen" height="420px" width="300px">
-      <p>
-        Diseño de Manual de Marca
-      </p>
-      <p>06/2022 - Argentina</p>
-    </div>
+    <section class="heroContainerProjects">
+      <div class="heroContainerTitleProjects mb-1-6">
+        <span class="h1Mobile">🚀</span>
+        <h1 class="h1Mobile">Proyectos</h1>
+      </div>
+      <iframe class="heroVideo mb-2-4" src="https://www.youtube.com/embed/p0OH206z9Wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="heroContainerCTAProjects">
+        <p class="bodyI mb-2-4">
+          A continuación presento una lista de proyectos en los que estuve trabajando hasta el día de hoy, me encantaría que hagamos uno en conjunto.
+        </p>
+        <button class="buttonPrimary mb-2-4">Contactar</button>
+      </div>
+      <img src="../icons/arrow-down.svg" alt="Flecha indicando bajar" title="Scrollear hacia abajo" class="heroArrowIconProjects">
+    </section>
+    <section class="containerProjects">
+      <div class="listProjects mb-4">
+        <div class="cardProject cardLarge mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">EmpreBa - Identidad de Marca</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pill bodyI">Diseño</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardProject mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">EmpreBa - Diseño de Aplicación Móvil</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pill bodyI">Diseño</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardProject cardLarge mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">Florencia Gordillo - Identidad de Marca</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pill bodyI">Diseño</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardProject mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">Movie Catalog - Aplicación móvil</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pillDeveloper bodyI">Desarrollo</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardProject cardLarge mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">reparteAR - Landing Page</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pillDeveloper bodyI">Desarrollo</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardProject mb-2">
+          <img 
+            src="../img/pr-EmpreBa.png" 
+            alt="Imagen del Proyecto EmpreBa"
+            title="Imagen del Proyecto EmpreBa" 
+            class="projectImg"
+          >
+          <div class="cardProjectDescription">
+            <p class="h3Mobile">To Do List - Aplicación web</p>
+            <div class="containerCardProjectCTA">
+              <button class="buttonPrimarySmall">
+                Ver detalle
+              </button>
+              <span class="pillDeveloper bodyI">Desarrollo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projectsContainerCTA">
+        <button class="buttonTertiary mb-3">Ver más</button>
+      </div>
+    </section>
   </main>
   <footer class="footer">
-    <p class="footerLogo">Logo</p>
-    <div class="footerContainerExternalLinks">
+    <p class="footerLogo mb-3">Logo</p>
+    <p class="h2Mobile footerMessage mb-3">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerCTA">
+      <button class="buttonPrimary mb-1">Contactar</button>
+      <button class="buttonSecondary mb-3">Descargar CV</button>
+    </div>
+    <div class="footerContainerExternalLinks mb-3">
       <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
         <img src="../icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
       </a>
@@ -78,14 +192,13 @@
         <img src="../icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
       </a>
     </div>
-    <div class="footerContainerInformation">
-      <p class="footerMessage">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerInformation mb-3">
       <div class="footerInformation">
-        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>Buenos Aires, Argentina</p>
       </div>
       <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>leonardogerbacio@gmail.com</p>
       </a>
     </div>

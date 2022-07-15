@@ -8,8 +8,9 @@
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="img/leo-codeversity.jpeg">
+  <meta property="og:image" content="img/leoFace.png">
   <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="./img/leoFace.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
 <body>
   <header class="header">
     <a href="" class="containerLogo">
-      <p title="Logo">Logo</p>
+      <p title="Logo h1Mobile">Logo</p>
     </a>
     <nav class="links">
       <ul class="listMenu">
@@ -32,7 +33,7 @@
           <a href="./pages/projects.html">Proyectos</a>
         </li>
         <li class="item activeLink">
-          <a href="./pages/tools.html">Servicios</a>
+          <a href="./pages/services.html">Servicios</a>
         </li>
         <li class="item activeLink">
           <a href="./pages/lets-work-together.html">Trabajemos juntos</a>
@@ -49,51 +50,116 @@
   </header>
   <main>
     <section class="heroContainer">
-      <img src="img/leoFace.png" alt="Foto de Leo Romero" class="heroImage">
-      <h1 class="h2Mobile heroTitle">👋 ¡Hola! Soy Leo Romero</h1>
-      <div class="heroCarouselContainer">
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Diseño landing page</p>
+      <div class="heroContainerTitle mb-1-6">
+        <span class="h1Mobile">👋</span>
+        <h1 class="h1Mobile">¡Hola! Soy Leo Romero</h1>
+      </div>
+      <div class="heroCarouselContainer mb-2-4">
+        <div class="cardService mr-2-4">
+          <span class="pill bodyI mb-1">Diseño</span>
+          <p class="subtitle">Diseño Landing Page</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Diseño aplicación móvil</p>
+        <div class="cardService mr-2-4">
+          <span class="pillDeveloper bodyI mb-1">Desarrollo</span>
+          <p class="subtitle">Desarrollo de landing page</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Diseño de flyers para Redes Sociales</p>
+        <div class="cardService mr-2-4">
+          <span class="pill bodyI mb-1">Diseño</span>
+          <p class="subtitle">Diseño de Flyers</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Diseño de Marca</p>
+        <div class="cardService mr-2-4">
+          <span class="pillDeveloper bodyI mb-1">Desarrollo</span>
+          <p class="subtitle">Desarrollo de Ecommerce</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Diseño de Logotipo</p>
+        <div class="cardService mr-2-4">
+          <span class="pill bodyI mb-1">Diseño</span>
+          <p class="subtitle">Diseño aplicación móvil</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Desarrollo de landing page</p>
+        <div class="cardService mr-2-4">
+          <span class="pillDeveloper bodyI mb-1">Desarrollo</span>
+          <p class="subtitle">Desarrollo Aplicación Web</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
-        <div class="heroCardService">
-          <p class="heroCardServiceText">Desarrollo de sitio web con Wordpress</p>
+        <div class="cardService mr-2-4">
+          <span class="pill bodyI mb-1">Diseño</span>
+          <p class="subtitle">Creación de Manual de Marca</p>
+          <button class="buttonPrimarySmall">
+            Ver más
+          </button>
         </div>
       </div>
-      <p class="subtitle heroDescription">¿Tenes una idea para diseñar o desarrollar?</p>
-      <button class="buttonPrimary">Contactame</button>
+      <div class="heroContainerCTA">
+        <p class="h3Mobile mb-1-6">¿Tenes una idea para diseñar o desarrollar?</p>
+        <button class="buttonPrimary mb-2-4">Contactar</button>
+      </div>
+      <img src="./icons/arrow-down.svg" alt="Flecha indicando bajar" title="Scrollear hacia abajo" class="heroArrowIcon">
     </section>
-    <section>
-      <h2>Introducción</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et quo ut natus tempora 
-        omnis reprehenderit culpa dicta consequuntur! Quibusdam mollitia illum nobis. Repudiandae quam officia 
-        harum ullam perspiciatis inventore?
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, et quo ut natus tempora 
-        omnis reprehenderit culpa dicta consequuntur! Quibusdam mollitia illum nobis. Repudiandae quam officia 
-        harum ullam perspiciatis inventore?
-      </p>
+    <section class="summaryContainerHome">
+      <div class="summaryContainerImg mb-1">
+        <img src="./img/leo-hero.png" alt="Foto de frente de Leo Romero" title="Foto de Leo Romero" class="summaryLeoImg mb-2-4">
+      </div>
+      <div class="summaryContainerDescription">
+        <h2 class="h2Mobile mb-1-6 summaryTitle">Leonardo Esteban, Gerbacio Romero</h2>
+        <p class="bodyI mb-2-4">
+          Me podes decir Leo, tengo 25 años, estudiante, emprendedor, Desarrollador Front end, Diseñador UX/UI y Técnico en Análisis de Sistemas Informáticos 
+        </p>
+        <p class="bodyI mb-2-4">
+          Me encanta poder ayudar de manera pro activa a las demás personas, escuchar música, entrenar y ¡siempre tengo ganas de aprender y superarme día a día!
+        </p>
+      </div>
+      <div class="summaryCarouselTools">
+        <div class="tool mr-2">
+          <p class="subtitle">Figma</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">Adobe Illustrator</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">Adobe Photoshop</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">HTML</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">CSS</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">Javascript</p>
+        </div>
+        <div class="tool mr-2">
+          <p class="subtitle">React JS</p>
+        </div>
+      </div>
+      <div class="heroContainerCTA">
+        <button class="buttonLink mb-1">Jugar memotest</button>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <p class="footerLogo">Logo</p>
-    <div class="footerContainerExternalLinks">
+    <p class="footerLogo mb-3">Logo</p>
+    <p class="h2Mobile footerMessage mb-3">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerCTA">
+      <button class="buttonPrimary mb-1">Contactar</button>
+      <button class="buttonSecondary mb-3">Descargar CV</button>
+    </div>
+    <div class="footerContainerExternalLinks mb-3">
       <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
         <img src="icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
       </a>
@@ -107,14 +173,13 @@
         <img src="icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
       </a>
     </div>
-    <div class="footerContainerInformation">
-      <p class="footerMessage">Desarrollemos y creemos juntos</p>
+    <div class="footerContainerInformation mb-3">
       <div class="footerInformation">
-        <img src="icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>Buenos Aires, Argentina</p>
       </div>
       <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-        <img src="icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación">
+        <img src="icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
         <p>leonardogerbacio@gmail.com</p>
       </a>
     </div>
