@@ -343,6 +343,8 @@ html {
 }
 
 .item a {
+  color: #041223;
+  text-decoration: none;
   font-size: 20px;
 }
 
@@ -710,6 +712,7 @@ html {
   display: flex;
   height: 4rem;
   margin-bottom: 24px;
+  text-decoration: none;
   width: 4rem;
 }
 
@@ -897,7 +900,7 @@ html {
   }
 }
 
-/* About Me Page */
+/* About Me Page 
 
 .heroHeaderContainer {
   align-items: center;
@@ -916,12 +919,6 @@ html {
   align-items: flex-start;
 }
 
-.circle {
-  background-color: #C7ECFC;
-  border-radius: 50%;
-  min-height: 2rem;
-  min-width: 2rem;
-}
 
 .summaryInformation {
   display: flex;
@@ -936,6 +933,7 @@ html {
 .informationDate {
   color: #4E4E4E;
 }
+*/
 
 /* Projects */
 .heroContainerProjects {
@@ -1329,4 +1327,23 @@ html {
   .input {
     font-size: 1.8rem;
   }
+}
+
+
+/*About me*/
+.circle {
+  background-color: #1E299F;
+  border-radius: 50%;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.heroAboutMe {
+  gap: 0.8rem;
+  padding: 12rem 1.6rem 2rem;
+}
+
+.containerEducation,
+.containerWorking {
+  padding: 4rem 0;
 }
