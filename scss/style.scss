@@ -1,4 +1,4 @@
-@import "_colors.scss", "_services.scss";
+@import "base/_extends", "base/mixins", "base/_colors", "base/texts", "base/buttons", "pages/_services";
 
 /* Reset styles */
 * {
@@ -113,42 +113,6 @@ html {
   font-size: 62.5%;
 }
 
-.h1Mobile {
-  font-size: 4.8rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.h2Mobile {
-  font-size: 3.4rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.h3Mobile {
-  font-size: 2.4rem;
-  line-height: 1.5;
-  font-weight: 300;
-}
-
-.subtitle {
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
-.bodyI {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-.bodyII {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -189,68 +153,6 @@ html {
   margin-right: 3rem;
 }
 
-.buttonPrimary,
-.buttonPrimarySmall,
-.buttonSecondary,
-.buttonTertiary {
-  background-color: $color-primary-75;
-  border-style: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: $color-dark-75;
-  min-width: 28rem;
-  overflow: hidden;
-  padding: 1.6rem 2.4rem;
-}
-
-.buttonSecondary {
-  background-color: $color-secondary-75;
-  color: $color-dark-75;
-}
-
-.buttonTertiary {
-  background-color: #FF97C6;
-  color: $color-dark-75;
-}
-
-.buttonPrimarySmall {
-  background-color: $color-secondary-75;
-  color: $color-dark-75;
-  max-width: 14rem;
-  min-width: 14rem;
-  padding: 0.8rem 1.6rem;
-}
-
-@media screen and (min-width: 768px) {
-  .buttonPrimary:hover,
-  .buttonSecondary:hover,
-  .buttonTertiary:hover {
-    background-color: $color-primary;
-    box-shadow: 0 8px 24px rgba(4, 18, 35, 0.3);
-    transition: ease-in-out 0.6s;
-  }
-
-  .buttonSecondary:hover {
-    background-color: $color-secondary;
-  }
-
-  .buttonTertiary:hover {
-    background-color: #E55B9A;
-  }
-
-  .buttonLink:hover {
-    color: $color-secondary;
-  }
-}
-
 .pill,
 .pillDeveloper {
   background-color: $color-secondary-50;
@@ -262,14 +164,6 @@ html {
 
 .pillDeveloper {
   background-color: $color-primary-50;
-}
-
-.buttonLink {
-  background: transparent;
-  color: $color-primary;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.5;
 }
 
 .cardService {
@@ -289,10 +183,68 @@ html {
 
 /* Navbar */
 
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 4rem;
+}
+
+.lineOne,
+.lineTwo,
+.lineThree {
+  min-width: 2rem;
+  min-height: 0.2rem;
+  background: $color-white-75;
+  color: $color-white-75;
+  margin: 0.6rem;
+  transition: all 0.5s ease;
+}
+
+.lineTwo {
+  width: 26px;
+}
+
+.toggle .lineOne {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background: $color-white-75;
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  -moz-transform: rotate(-45deg) translate(-5px, 6px);
+  -ms-transform: rotate(-45deg) translate(-5px, 6px);
+  -o-transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .lineTwo {
+  width: 200px;
+  opacity: 0;
+}
+
+.toggle .lineThree {
+  transform: rotate(45deg)translate(-5px, -6px);
+  background-color: #062695;
+  -webkit-transform: rotate(45deg)translate(-5px, -6px);
+  -moz-transform: rotate(45deg)translate(-5px, -6px);
+  -ms-transform: rotate(45deg)translate(-5px, -6px);
+  -o-transform: rotate(45deg)translate(-5px, -6px);
+}
+
+
+@media screen and (min-width:768px) {
+  .burger {
+    cursor: pointer;
+  }
+}
+
 .navbar-brand {
   color: $color-white-75;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.burgerMenu {
+  border: 2px solid $color-white-75;
+  background-color: $color-white-75;
+  min-height: 2rem;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
@@ -320,6 +272,10 @@ html {
 @media screen and (min-width: 768px) {
   .header {
     padding: 2rem 4rem;
+  }
+
+  .containerBurger {
+    display: none;
   }
 }
 
@@ -764,6 +720,11 @@ html {
 }
 
 /* Projects */
+
+.projectsContainer {
+  @include container-page;
+}
+
 .heroContainerProjects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -1,0 +1,24 @@
+@import "base/_colors";
+
+%style-button-base {
+  border-style: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $color-dark-75;
+  min-width: 28rem;
+  overflow: hidden;
+  padding: 1.6rem 2.4rem;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(4, 18, 35, 0.3);
+    transition: ease-in-out 0.6s;
+  }
+}
