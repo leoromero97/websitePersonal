@@ -1,11 +1,9 @@
 @mixin container-page {
-  @media (min-width: 1440px)  {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-  }
 }
 
 @mixin hero-container-section {

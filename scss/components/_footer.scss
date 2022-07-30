@@ -1,6 +1,9 @@
 .footer {
-  @include container-page;
   background-color: $color-dark;
+
+  @media (min-width: $min-width-big-desktop) {
+    @include container-page;
+  }
 }
 
 .containerFooter {
@@ -74,7 +77,7 @@
   align-items: center;
   background-color: $color-white-75;
   border-radius: 50%;
-  box-shadow: 0 0 4px $color-dark-75;
+  box-shadow: $box-shadow-dark;
   display: flex;
   height: 4rem;
   justify-content: center;

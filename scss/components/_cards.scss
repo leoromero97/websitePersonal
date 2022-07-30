@@ -2,7 +2,7 @@
   align-items: flex-start;
   background-color: $color-dark-50;
   border-radius: 1.2rem;
-  box-shadow: 0 8px 24px rgba(4, 18, 35, 0.3);
+  box-shadow: $box-shadow-dark;
   color: $color-white-75;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 .cardProject {
   align-items: flex-start;
   border-radius: 1.2rem;
-  box-shadow: 0 8px 24px $color-dark-75;
+  box-shadow: $box-shadow-dark;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

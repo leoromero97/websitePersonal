@@ -1,5 +1,5 @@
 @import "base/_extends", "base/mixins", "base/_colors", "base/_texts", "base/_variables";
-@import "components/_buttons", "components/_cards", "components/_footer", "components/_pill";
+@import "components/_buttons", "components/_cards", "components/_footer", "components/_pill", "components/_navbar";
 @import "pages/_home", "pages/_services";
 
 /* Reset styles */
@@ -109,6 +109,10 @@ strong {
 
 body {
   background-color: $color-dark-75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 html {
@@ -155,151 +159,6 @@ html {
   margin-right: 3rem;
 }
 
-
-/* Navbar */
-
-
-.burger {
-  display: flex;
-  flex-direction: column;
-  width: 4rem;
-}
-
-.lineOne,
-.lineTwo,
-.lineThree {
-  min-width: 2rem;
-  min-height: 0.2rem;
-  background: $color-white-75;
-  color: $color-white-75;
-  margin: 0.6rem;
-  transition: all 0.5s ease;
-}
-
-.lineTwo {
-  width: 26px;
-}
-
-.toggle .lineOne {
-  transform: rotate(-45deg) translate(-5px, 6px);
-  background: $color-white-75;
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  -moz-transform: rotate(-45deg) translate(-5px, 6px);
-  -ms-transform: rotate(-45deg) translate(-5px, 6px);
-  -o-transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .lineTwo {
-  width: 200px;
-  opacity: 0;
-}
-
-.toggle .lineThree {
-  transform: rotate(45deg)translate(-5px, -6px);
-  background-color: #062695;
-  -webkit-transform: rotate(45deg)translate(-5px, -6px);
-  -moz-transform: rotate(45deg)translate(-5px, -6px);
-  -ms-transform: rotate(45deg)translate(-5px, -6px);
-  -o-transform: rotate(45deg)translate(-5px, -6px);
-}
-
-
-@media screen and (min-width:768px) {
-  .burger {
-    cursor: pointer;
-  }
-}
-
-.navbar-brand {
-  color: $color-white-75;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.burgerMenu {
-  border: 2px solid $color-white-75;
-  background-color: $color-white-75;
-  min-height: 2rem;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-  color: $color-white-75;
-  font-weight: 600;
-}
-
-.nav-link {
-  color: $color-white-50;
-  font-size: 1.6rem;
-}
-
-.form-check {
-  padding-left: 4em;
-}
-
-.form-check-label {
-  color: $color-white-75;
-}
-
-.header {
-  padding-top: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 2rem 4rem;
-  }
-
-  .containerBurger {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar {
-    max-width: 144rem;
-    display: flex;
-  }
-
-  .navbar .container-fluid {
-    min-width: 102rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navbar-brand {
-    font-size: 2.2rem;
-  }
-
-  .nav-item {
-    font-size: 1.8rem;
-  }
-
-  .nav-item .nav-link:hover {
-    color: $color-primary
-  }
-
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
-
-  .nav-item-theme {
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    gap: 2rem;
-  }
-}
-
 .containerArrows {
   grid-column: 1/5;
   width: 100%;
@@ -307,7 +166,7 @@ html {
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $min-width-tablet) {
     margin-bottom: 6rem;
   }
 
@@ -369,7 +228,6 @@ html {
   }
 }
 
-
 @media screen and (min-width: 1024px) {
   .heroContainerTitle {
     grid-column: 2/5;
@@ -379,7 +237,9 @@ html {
 /* Projects */
 
 .projectsContainer {
-  @include container-page;
+  @media (min-width: $min-width-big-desktop) {
+    @include container-page;
+  }
 }
 
 .heroContainerProjects {
@@ -423,7 +283,7 @@ html {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $min-width-tablet) {
   .heroContainerProjects {
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
@@ -564,7 +424,7 @@ html {
   color: $color-white-75;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $min-width-tablet) {
   .letsWorkContainer {
     grid-template-columns: repeat(12, 1fr);
     padding: 14rem 2rem 2rem;
@@ -653,7 +513,7 @@ html {
  width: 30rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $min-width-tablet) {
   .memotestVector {
     height: 40rem;
     width: 40rem;
