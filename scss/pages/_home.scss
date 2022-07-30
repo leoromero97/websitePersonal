@@ -1,0 +1,193 @@
+.homeContainer {
+  @include container-page;
+
+  @media (min-width:1024px) {
+    background-image: url(../../static/img/blur-background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.heroContainerHome {
+  @include hero-container-section;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 8rem 4rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 144rem;
+  }
+}
+
+.heroContainerTitleHome {
+  @include hero-container-title;
+  @media (min-width: 768px) {
+    grid-column: 1/13;
+  }
+  @media (min-width: 1024px) {
+    grid-column: 1/5;
+  }
+}
+
+.handEmoji {
+  animation: moveHand infinite ease-in 1.6s;
+  transform-origin: 70% 70%;
+}
+
+@keyframes moveHand {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  25% {
+    transform: rotateZ(05deg);
+  }
+
+  50% {
+    transform: rotateZ(8deg);
+  }
+
+  75% {
+    transform: rotateZ(05deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.containerCarouselCardsHome {
+  @include carousel-container;
+
+  @media (min-width: 768px) {
+    grid-column: 1/13;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 6/13;
+  }
+}
+
+.heroContainerCTAHome {
+  grid-column: 1/5;
+
+  p {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/13;
+    margin-bottom: 10rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 6rem;
+  }
+}
+
+.summaryContainerHome {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 2rem 1.6rem;
+
+  @media (min-width: 768px) {
+    background-image: url(../../static/img/blur-background.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 4rem 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    background-image: none;
+    padding-top: 10rem;
+    max-width: 144rem;
+  }
+}
+
+.summaryContainerImgHome {
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  height: 28rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 3/6;
+    grid-row: 1/3;
+    display: flex;
+  }
+}
+/* TODO: Optimizar el tamaño de la imagen del html*/
+.summaryLeoImgHome {
+  height: 28rem;
+
+  @media (min-width: 1024px) {
+    height: 30rem;
+  }
+}
+
+.summaryContainerDescriptionHome {
+  grid-column: 1/5;
+
+  h2 {
+    text-align: center;
+  }
+ 
+  @media (min-width: 768px) {
+    grid-column: 6/13;
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 7/12;
+    grid-row: 1/3;
+  }
+}
+
+.containerCarouselToolsHome {
+  @include carousel-container;
+  @media (min-width: 768px) {
+    grid-column: 1/13;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 6rem;
+  }
+}
+
+.vectorTool {
+  background-color: $color-white-75;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px $color-dark-75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.containerLinkMemotest {
+  align-items: center;
+  display: flex;
+  grid-column: 1/5;
+
+  @media (min-width: 768px) {
+    grid-column: 1/13;
+  }
+}

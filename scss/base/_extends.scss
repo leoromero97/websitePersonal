@@ -22,3 +22,13 @@
     transition: ease-in-out 0.6s;
   }
 }
+
+%style-container-information-footer {
+  grid-column: 1/5;
+  align-items: center;
+  justify-content: space-around;
+  justify-self: center;
+  display: flex;
+  max-width: 40rem;
+  width: 100%;
+}

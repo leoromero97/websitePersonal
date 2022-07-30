@@ -9,16 +9,7 @@
 }
 
 .heroContainerTitleServices {
-  grid-column: 1/4;
-  margin-bottom: 2rem;
-
-  @media (min-width: 768px) {
-      grid-column: 1/5;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      margin-bottom: 0;
-  }
+  @include hero-container-title;
 }
 
 .containerCarouselDesign,
