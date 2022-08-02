@@ -284,177 +284,73 @@ html {
   min-width: 22rem;
 }
 
-/* Header */
+/* Navbar */
 
-.header {
-  background-color: #F7FCFF;
-  height: 80px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1;
-  border-bottom: 2px solid #041223;
-  padding: 2rem 1.6rem;
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.nav-link {
+  font-size: 1.6rem;
 }
 
-.containerLogo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 50%;
-  height: 50%;
+.form-check {
+  padding-left: 4em;
 }
 
-.links {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  left: 0;
-  top: 80px;
-  height: 94%;
-  width: 90%;
-  transform: translateX(140%);
-  -webkit-transform: translateX(140%);
-  -moz-transform: translateX(140%);
-  -ms-transform: translateX(140%);
-  -o-transform: translateX(140%);
-  transition: transform 0.6s ease-in-out;
-  -webkit-transition: transform 0.6s ease-in-out;
-  -moz-transition: transform 0.6s ease-in-out;
-  -ms-transition: transform 0.6s ease-in-out;
-  -o-transition: transform 0.6s ease-in-out;
+.form-check-label {
+  color: rgba(0, 0, 0, 0.55);
 }
 
-.listMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background-color: #F7FCFF;
-}
-
-.item {
-  width: 80%;
-}
-
-.item a {
-  color: #041223;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.activeLink a {
-  font-weight: 600;
-}
-
-.containerBurger {
-  align-items: center;
-  cursor: pointer;
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.burger {
-  width: 40px;
-}
-
-.lineOne,
-.lineTwo,
-.lineThree {
-  width: 2rem;
-  height: 0.2rem;
-  background-color: #041223;
-  margin: 1rem;
-  transition: all 0.5s ease;
-}
-
-.lineTwo {
-  width: 26px;
-}
-
-.toggle .lineOne {
-  transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #041223;
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-  -moz-transform: rotate(-45deg) translate(-5px, 6px);
-  -ms-transform: rotate(-45deg) translate(-5px, 6px);
-  -o-transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .lineTwo {
-  width: 200px;
-  opacity: 0;
-}
-
-.toggle .lineThree {
-  transform: rotate(45deg)translate(-5px, -6px);
-  background-color: #062695;
-  -webkit-transform: rotate(45deg)translate(-5px, -6px);
-  -moz-transform: rotate(45deg)translate(-5px, -6px);
-  -ms-transform: rotate(45deg)translate(-5px, -6px);
-  -o-transform: rotate(45deg)translate(-5px, -6px);
-}
-
-
-@media screen and (min-width:480px) {
-  .burger {
-    cursor: pointer;
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 4rem;
   }
 }
 
-@media screen and (min-width:768px) {
-  #header {
-    height: 100px;
-    position: absolute;
-    padding: 0px 10px 0 10px;
-  }
 
-  .links {
-    top: 0;
-    height: 100%;
-    width: 70%;
-    transform: translate(40%, 0%);
-    -webkit-transform: translate(40%, 0%);
-    -moz-transform: translate(40%, 0%);
-    -ms-transform: translate(40%, 0%);
-    -o-transform: translate(40%, 0%);
-    position: absolute;
-  }
-
-  .item {
-    width: auto;
-  }
-
-  .listMenu {
-    flex-direction: row;
+@media screen and (min-width: 1024px) {
+  .header{
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
   }
 
-  .item a:hover {
-    font-weight: bolder;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
+  .navbar {
+    max-width: 144rem;
+    display: flex;
   }
 
-  .containerBurger {
-    display: none;
+  .navbar .container-fluid {
+    min-width: 102rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .sidebar {
-    box-shadow: #0A1F29 0px 0px 0px 0px;
+  .navbar-brand {
+    font-size: 2.2rem;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .nav-item-theme {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    gap: 2rem;
   }
 }
+
 
 /* Hero */
 
@@ -556,6 +452,7 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 2rem;
 }
 
 .containerArrows {
@@ -815,6 +712,7 @@ html {
   .summaryCarouselTools {
     flex-wrap: wrap;
     justify-self: center;
+    justify-content: center;
   }
 
   .footer {
@@ -841,53 +739,6 @@ html {
   .footerCopyRight {
     grid-column: 1/13;
     justify-self: center;
-  }
-
-  .header {
-    height: 100px;
-    position: absolute;
-    padding: 0px 10px 0 10px;
-  }
-
-  .links {
-    top: 0;
-    height: 100%;
-    width: 70%;
-    transform: translate(40%, 0%);
-    -webkit-transform: translate(40%, 0%);
-    -moz-transform: translate(40%, 0%);
-    -ms-transform: translate(40%, 0%);
-    -o-transform: translate(40%, 0%);
-    position: absolute;
-  }
-
-  .item {
-    width: auto;
-  }
-
-  .listMenu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .item a:hover {
-    font-weight: bolder;
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -ms-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-  }
-
-  .containerBurger {
-    display: none;
-  }
-
-  .containerLogo {
-    height: 100%;
-    width: 30%;
-    padding-left: 4%;
   }
 
   .logo {
@@ -1002,6 +853,7 @@ html {
   flex-direction: column;
   padding: 0 1.6rem 1.6rem;
   gap: 2.4rem;
+  width: 100%;
 }
 
 .containerCardProjectCTA {
@@ -1346,4 +1198,24 @@ html {
 .containerEducation,
 .containerWorking {
   padding: 4rem 0;
+}
+
+/* Modal */
+
+.modal-footer {
+  justify-content: center;
+}
+
+/* Memo test*/
+
+.containerMemotest {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.memotestVector {
+ height: 30rem;
+ width: 30rem;
 }
