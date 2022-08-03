@@ -33,7 +33,7 @@
   font-size: 1.8rem;
   font-weight: 700;
 
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-desktop-bootstrap) {
     cursor: pointer;
     font-size: 2.2rem;
   }
@@ -45,7 +45,7 @@
   flex-direction: column;
   width: 4rem;
 
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-desktop-bootstrap) {
     cursor: pointer;
   }
 }
@@ -55,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-desktop-bootstrap) {
     display: none;
   }
 }
@@ -111,7 +111,7 @@
   justify-content: space-between;
   padding: 4rem;
 
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-desktop-bootstrap) {
     align-items: center;
     background-color: transparent;
     flex-direction: row;
@@ -120,15 +120,17 @@
     justify-content: flex-end;
     padding: 0;
   }
+}
 
-  .navbar-brand {
+.navbar-collapse .navbar-brand {
+  @media (min-width: $min-width-desktop-bootstrap) {
     display: none;
   }
 }
 
 .navbar-nav {
-  @media (min-width: $min-width-desktop) {
-    align-items: baseline;
+  @media (min-width: $min-width-desktop-bootstrap) {
+    align-items: center;
     gap: 2rem;
   }
 }
@@ -140,7 +142,7 @@
 
 .nav-item {
   a {
-    @media (min-width: $min-width-desktop) {
+    @media (min-width: $min-width-desktop-bootstrap) {
       font-size: 1.8rem;
     }
   }
@@ -159,7 +161,7 @@
   }
 
   &:hover {
-    @media (min-width: $min-width-desktop) {
+    @media (min-width: $min-width-desktop-bootstrap) {
       color: $color-primary;
     }
   }
@@ -167,6 +169,10 @@
 
 .dropdown {
   margin-bottom: 1rem;
+
+  @media (min-width: $min-width-desktop-bootstrap) {
+    margin-bottom: 0;
+  }
 }
 
 .dropdown-menu {
@@ -178,7 +184,7 @@
 }
 
 .nav-item-theme {
- @media (min-width: $min-width-desktop) {
+ @media (min-width: $min-width-desktop-bootstrap) {
    display: flex;
    align-items: center;
  }
@@ -191,7 +197,7 @@
 .form-check-label {
   color: $color-white-75;
   
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-desktop-bootstrap) {
     font-size: 1.8rem;
   }
 }

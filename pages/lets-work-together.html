@@ -4,26 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Landing Personal de Leo Romero - Desarrollador Frontend y Diseñador UX/UI" />
+  <meta name="description" content="Web site personal de Leo Romero - Desarrollador Frontend y Diseñador UX/UI - Sección Formulario de contacto" />
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="../img/leoFace.png">
-  <link rel="icon" href="../img/leoFace.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta property="og:image" content="../static/img/leoFace.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="../static/img/leoFace.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Leo Romero - Trabajemos juntos</title>
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          Logo
+        </a>
+        <!-- TODO: Hacer el burger menu nativo con Javascript-->
+        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger">
+            <span class="lineOne"></span>
+            <span class="lineTwo"></span>
+            <span class="lineThree"></span>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <a class="navbar-brand" href="../index.html" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            Logo
+          </a>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
@@ -38,7 +49,7 @@
               <a class="nav-link" href="./services.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Trabajemos juntos</a>
+              <a class="nav-link active" aria-current="page" href="./lets-work-together.html">Trabajemos juntos</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,23 +61,43 @@
               </ul>
             </li>
             <li class="nav-item-theme">
+              <!-- TODO: Hacer el switch nativo -->
               <div class="form-check form-switch">
                 <label class="form-check-label" for="lightSwitch"> Tema </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch"/>
               </div>
             </li>
           </ul>
+          <div class="nav-social-links">
+            <a href="https://github.com/leoromero97" target="_blank" title="GitHub link" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" title="Linkedin link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+            </a>
+          </div>
+          <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="close">
+              <span class="lineFour"></span>
+              <span class="lineFive"></span>
+            </div>
+          </div>
         </div>
-      </div>
     </nav>
   </header>
-  <main>
-    <section class="letsWorkContainer">
-      <div class="letsWorkContainerTitle mb-4">
+  <main class="letsWorkContainer">
+    <section class="heroLetsWork">
+      <div class="heroContainerTitleLetsWork">
         <span class="h1">💡</span>
         <h1 class="h1">¿Tenes un proyecto en mente?</h1>
       </div>
-      <div class="letsWorkContainerSlogan mb-3">
+      <div class="heroSloganLetsWork">
         <h2 class="h2 slogan">Trabajemos juntos</h2>
       </div>
       <form method="post" class="form"> 
@@ -87,37 +118,39 @@
     </section>
   </main>
   <footer class="footer">
-    <p class="footerLogo mb-3">Logo</p>
-    <p class="h2 footerMessage mb-3">Desarrollemos y creemos juntos</p>
-    <div class="footerContainerCTA">
-      <button class="buttonPrimary mb-4">Contactar</button>
-      <button class="buttonSecondary mb-3">Descargar CV</button>
-    </div>
-    <div class="footerContainerExternalLinks mb-3">
-      <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
-        <img src="../icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" class="footerContainerIcon">
-        <img src="../icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.behance.net/leonardogromero" title="Behance link" class="footerContainerIcon">
-        <img src="../icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" class="footerContainerIcon">
-        <img src="../icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
-      </a>
-    </div>
-    <div class="footerContainerInformation mb-3">
-      <div class="footerInformation">
-        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
-        <p>Buenos Aires, Argentina</p>
+    <div class="containerFooter">
+      <p class="footerLogo mb-4">Logo</p>
+      <p class="h3 footerMessage mb-3">Desarrollemos y creemos juntos</p>
+      <div class="footerContainerCTA">
+        <button class="buttonPrimary mb-4">Contactar</button>
+        <button class="buttonSecondary mb-3">Descargar CV</button>
       </div>
-      <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
-        <p>leonardogerbacio@gmail.com</p>
-      </a>
+      <div class="footerContainerExternalLinks mb-3">
+        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+        </a>
+      </div>
+      <div class="footerContainerInformation mb-3">
+        <div class="footerInformation">
+          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <p>Buenos Aires, Argentina</p>
+        </div>
+        <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
+          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <p>leonardogerbacio@gmail.com</p>
+        </a>
+      </div>
+      <p class="footerCopyRight body2">Creado por Leonardo Esteban Gerbacio Romero &COPY; 2022</p>
     </div>
-    <p class="footerCopyRight">Creado por Leonardo Esteban Gerbacio Romero &COPY; 2022</p>
   </footer>
 </body>
 <!-- JavaScript Bundle with Popper -->

@@ -1,0 +1,202 @@
+.aboutMeContainer {
+  @media (min-width: $min-width-big-desktop) {
+    @include container-page;
+  }
+}
+
+.heroAboutMe {
+  @include hero-container-section;
+  padding-top: 10rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 12rem 4rem 2rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 144rem;
+    padding-top: 16rem;
+  }
+}
+
+.heroContainerTitleAboutMe {
+  @include hero-container-title;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    grid-column: 1/5;
+  }
+}
+
+.imageFaceLeo {
+  height: 6.8rem;
+  width: 6.8rem;
+
+  @media (min-width: $min-width-tablet) {
+    min-height: 14rem;
+    min-width: 14rem;
+  }
+}
+
+.heroContainerDescription {
+  grid-column: 1/5;
+  gap: 2rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+  }
+
+  p {
+    @media (min-width: $min-width-tablet) {
+      max-width: 70rem;
+    }
+  }
+}
+
+.heroContainerCTAAboutMe {
+  align-items: center;
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    text-align: center;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+    margin-bottom: 10rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding-top: 6rem;
+  }
+}
+
+.containerEducation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 1.6rem;
+  width: 100%;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 4rem 4rem;
+  }
+}
+
+.titleEducation,
+.titleWorking {
+  grid-column: 1/5;
+  margin-bottom: 2rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+.containerAccordion {
+  grid-column: 1/5;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+  }
+}
+
+.accordion {
+  margin-bottom: 4rem;
+
+  @media (min-width: $min-width-tablet) {
+    max-width: 70rem;
+  }
+}
+
+.accordion-item {
+  background: $color-dark-50;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: $box-shadow-dark;
+  color: $color-white-75;
+  margin-bottom: 2rem;
+}
+
+.accordion-item {
+  border-radius: 1.2rem;
+}
+
+.accordion-header {
+  background: $color-white-50;
+  border-radius: 1.2rem;
+  color: $color-dark-75;
+  padding: 1rem;
+}
+
+.accordion-item .accordion-button {
+  background: transparent;
+  border-radius: 1.2rem;
+  color: $color-dark-75;
+}
+
+.accordion-button {
+  p {
+    color: $color-dark-75;
+  }
+}
+
+.circle {
+  background-color: $color-primary-75;
+  border-radius: 50%;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.accordionDescription {
+  p {
+    color: $color-dark-25;
+    margin-bottom: 1rem;
+  }
+}
+
+.accordionTextDate {
+  color: $color-dark-25;
+}
+
+.carousel {
+  grid-column: 1/5;
+  min-height: 28rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+    margin-bottom: 4rem;
+    max-width: 70rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-width: 102rem;
+  }
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+
+  img {
+    object-fit: fill;
+    height: 100%;
+  }
+}
+
+.containerWorking {
+  padding: 2rem 1.6rem;
+}

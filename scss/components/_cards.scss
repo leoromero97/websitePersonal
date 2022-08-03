@@ -16,13 +16,44 @@
 .cardProject {
   align-items: flex-start;
   border-radius: 1.2rem;
-  box-shadow: $box-shadow-dark;
+  box-shadow: 0 8px 24px $color-dark-50;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-height: 32rem;
   min-width: 28rem;
   max-width: 40rem;
+  transition: ease all 0.6s;
+
+  @media (min-width: $min-width-desktop) {
+    &:hover {
+      background-color: $color-primary-50;
+      box-shadow: 0 8px 24px $color-dark;
+    }
+  }
+}
+
+.cardLarge {
+  @media (min-width: $min-width-desktop) {
+    min-height: 70rem;
+    justify-content: space-between;
+  }
+}
+
+.cardLarge .projectImg {
+  @media (min-width: $min-width-desktop) {
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    object-fit: cover;
+    height: 50rem;
+  }
+}
+
+.cardLarge .cardProjectDescription {
+  @media (min-width: $min-width-desktop) {
+    padding: 2rem;
+    height: 20rem;
+  }
 }
 
 .projectImg {
@@ -32,14 +63,21 @@
   object-fit: contain;
   object-position: top;
   width: 100%;
+
+  @media (min-width: $min-width-desktop) {
+    object-fit: cover;
+    object-position: top left;
+  }
 }
 
 .cardProjectDescription {
   background: linear-gradient(180deg, #20243D 25.35%, #080C25 100%);
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
   color: $color-white-75;
   display: flex;
   flex-direction: column;
-  padding: 0 1.6rem 1.6rem;
+  padding: 1.6rem 1.6rem;
   gap: 2.4rem;
   width: 100%;
 }
