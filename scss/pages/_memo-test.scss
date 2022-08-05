@@ -1,0 +1,47 @@
+.memoTestContainer {
+  @media (min-width: $min-width-big-desktop) {
+    @include container-page;
+  }
+}
+
+.heroMemoTest {
+  @include hero-container-section;
+  padding-top: 10rem;
+  text-align: center;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 14rem 4rem 2rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 144rem;
+    padding: 16rem 4rem;
+  }
+
+  h1 {
+    grid-column: 1/5;
+    
+    margin-bottom: 4rem;
+  }
+
+  h2,
+  p {
+    grid-column: 1/5;
+  }
+} 
+
+.memotestVector {
+  min-height: 30rem;
+  grid-column: 1/5;
+  width: 100%;
+
+  @media (min-width: $min-width-big-desktop) {
+    height: 40rem;
+  }
+}

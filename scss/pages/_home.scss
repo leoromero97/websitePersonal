@@ -16,7 +16,6 @@
   padding-top: 10rem;
 
   @media (min-width: $min-width-tablet) {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
     padding: 12rem 4rem 2rem;
@@ -30,9 +29,12 @@
 
 .heroContainerTitleHome {
   @include hero-container-title;
+  margin-bottom: map-get($map: $margin-spaces, $key: m2);
+
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
   }
+
   @media (min-width: $min-width-desktop) {
     grid-column: 1/5;
   }
@@ -66,7 +68,8 @@
 }
 
 .containerCarouselCardsHome {
-  @include carousel-container;
+  @include carousel-container-native;
+  margin-bottom: map-get($map: $margin-spaces, $key: m4);
 
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
@@ -100,8 +103,8 @@
 .summaryContainerHome {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
   padding: 2rem 1.6rem;
+  width: 100%;
 
   @media (min-width: $min-width-tablet) {
     background-image: url(../../static/img/blur-background.png);
@@ -125,6 +128,7 @@
   display: flex;
   justify-content: center;
   height: 28rem;
+  margin-bottom: map-get($map: $margin-spaces, $key: m3);
   width: 100%;
 
   @media (min-width: $min-width-tablet) {
@@ -141,6 +145,7 @@
 /* TODO: Optimizar el tamaño de la imagen del html*/
 .summaryLeoImgHome {
   height: 28rem;
+  margin-bottom: map-get($map: $margin-spaces, $key: m3);
 
   @media (min-width: $min-width-desktop) {
     height: 30rem;
@@ -166,7 +171,7 @@
 }
 
 .containerCarouselToolsHome {
-  @include carousel-container;
+  @include carousel-container-native;
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
   }
@@ -185,6 +190,13 @@
   justify-content: center;
   padding: 2rem;
   text-align: center;
+  transition: ease all 0.6s;
+
+  @media (min-width: $min-width-desktop) {
+    &:hover {
+      background-color: $color-primary-50;
+    }
+  }
 }
 
 .containerLinkMemotest {

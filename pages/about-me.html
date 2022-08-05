@@ -4,32 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Landing Personal de Leo Romero - Desarrollador Frontend y Diseñador UX/UI" />
+  <meta name="description" content="Web site personal de Leo Romero - Desarrollador Frontend y Diseñador UX/UI - Sección Sobre mí" />
   <meta name="keywords" content="Desarrollador, Frontend, Desarrollo web, Developer, Diseñador, UX/UI, Designer, Branding, Marca"/>
   <meta name="author" content="Leonardo Esteban Gerbacio Romero" />
   <meta name="copyright" content="Leonardo Esteban Gerbacio Romero" />
-  <meta property="og:image" content="../img/leoFace.png">
-  <link rel="icon" href="../img/leoFace.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta property="og:image" content="../static/img/leoFace.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" href="../static/img/leoFace.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Leo Romero - Sobre mí</title>
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          Logo
+        </a>
+        <!-- TODO: Hacer el burger menu nativo con Javascript-->
+        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger">
+            <span class="lineOne"></span>
+            <span class="lineTwo"></span>
+            <span class="lineThree"></span>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <a class="navbar-brand" href="../index.html" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            Logo
+          </a>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+              <a class="nav-link active" aria-current="page" href="./about-me.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./projects.html">Proyectos</a>
@@ -50,202 +61,228 @@
               </ul>
             </li>
             <li class="nav-item-theme">
+              <!-- TODO: Hacer el switch nativo -->
               <div class="form-check form-switch">
                 <label class="form-check-label" for="lightSwitch"> Tema </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch"/>
               </div>
             </li>
           </ul>
+          <div class="nav-social-links">
+            <a href="https://github.com/leoromero97" target="_blank" title="GitHub link" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" title="Linkedin link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+            </a>
+            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+              <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+            </a>
+          </div>
+          <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="close">
+              <span class="lineFour"></span>
+              <span class="lineFive"></span>
+            </div>
+          </div>
         </div>
-      </div>
     </nav>
   </header>
-  <main>
-    <section class="container heroAboutMe">
-      <div class="heroHeaderContainer">
-        <img src="../img/leoFace.png" alt="Foto de la cara de Leo Romero" title="Foto Leo Romero" class="mb-2">
-        <h1 class="display-1 fw-bolder mb-2">Sobre mí</h1>
+  <main class="aboutMeContainer">
+    <section class="heroAboutMe">
+      <div class="heroContainerTitleAboutMe">
+        <img src="../static/img/leoFace.png" alt="Foto de la cara de Leo Romero" title="Foto Leo Romero" class="imageFaceLeo mb-2">
+        <h1 class="h1">Sobre mí</h1>
       </div>
-      <p class="fs-4 mb-4">
-        Me podes decir Leo, tengo 25 años, estudiante, emprendedor, Desarrollador Front end, Diseñador UX/UI y Técnico en Análisis de Sistemas Informáticos.
-      </p>
-      <p class="fs-4 mb-4">
-        Me encanta poder ayudar de manera pro activa a las demás personas, escuchar música, entrenar y siempre tengo ganas de aprender y superarme día a día !
-      </p>
-      <div class="heroContainerCTA">
-        <p class="display-3">¿Tenes una idea para diseñar o desarrollar?</p>
-        <button class="buttonPrimary mb-3">Contactar</button>
+      <div class="heroContainerDescription">
+        <p class="body1 mb-4">
+          Me podes decir Leo, tengo 25 años, estudiante, emprendedor, Desarrollador Front end, Diseñador UX/UI y Técnico en Análisis de Sistemas Informáticos.
+        </p>
+        <p class="body1 mb-4">
+          Me encanta poder ayudar de manera pro activa a las demás personas, escuchar música, entrenar y siempre tengo ganas de aprender y superarme día a día !
+        </p>
       </div>
-    </section>
-    <section class="container containerEducation">
-      <h2 class="display-3 fw-bolder text-center mb-3">Educación</h2>
-      <!--Accordion-->
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingOne">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <span class="circle mr-1"></span>
-              <p class="m-0">Coderhouse</p>
-            </div>
-            <div class="px-4">
-              <p class="fs-3">Carrerar de Diseño UX/UI</p>
-              <p class="fs-6 text-secondary">01/2022 - 11/2022</p>
-            </div>
-          </div>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingTwo">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <span class="circle mr-1"></span>
-              <p class="m-0">Instituto Cristo Obrero</p>
-            </div>
-            <div class="px-4">
-              <p class="fs-3">Técnico en Análisis de Sistemas Informáticos</p>
-              <p class="fs-6 text-secondary">04/2019 - 12/2021</p>
-            </div>
-          </div>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingThree">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <span class="circle mr-1"></span>
-              <p class="m-0">Quales Group</p>
-            </div>
-            <div class="px-4">
-              <p class="fs-3">Base de Datos Inicial SQL</p>
-              <p class="fs-6 text-secondary">06/2020 - 08/2020</p>
-            </div>
-          </div>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="carouselExampleControls" class="carousel slide mb-8" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/Certificado-Coderhouse-PS-AI.png" class="d-block w-100" alt="Certificado de Coderhouse Photoshop e Illustrator">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Leonardo E. Gerbacio Romero Certificado-Coderhouse-Diseño UX-UI.png" class="d-block w-100" alt="Certificado de Coderhouse Diseño UX/UI">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/quales.png" class="d-block w-100" alt="Certificado de Quales Group Base de Datos Inicial SQL">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+      <div class="heroContainerCTAAboutMe mb-2-4">
+        <p class="h3 mb-1-6">¿Tenes una idea para diseñar o desarrollar?</p>
+        <button class="buttonPrimary mb-2-4">Contactar</button>
       </div>
     </section>
-    <section class="container containerWorking">
-      <h2 class="display-3 fw-bolder text-center mb-3">Experiencia laboral</h2>
+    <section class="containerEducation">
+      <h2 class="titleEducation h2">Educación</h2>
       <!--Accordion-->
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingFour">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-              <span class="circle mr-1"></span>
-              <p class="m-0">Codiversity</p>
+      <div class="containerAccordion">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingOne">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">Coderhouse</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Carrerar de Diseño UX/UI</p>
+                <p class="body2 accordionTextDate">01/2022 - 11/2022</p>
+              </div>
             </div>
-            <div class="px-4">
-              <p class="fs-3">Frontend Developer Web and Mobile</p>
-              <p class="fs-6 text-secondary">10/2020- Actualidad</p>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingTwo">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">Instituto Cristo Obrero</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Técnico en Análisis de Sistemas Informáticos</p>
+                <p class="body2 accordionTextDate">04/2019 - 12/2021</p>
+              </div>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingThree">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">Quales Group</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Base de Datos Inicial SQL</p>
+                <p class="body2 accordionTextDate">06/2020 - 08/2020</p>
+              </div>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingFive">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              <span class="circle mr-1"></span>
-              <p class="m-0">reparteAR</p>
+        <div id="carouselExampleControls" class="carousel slide mb-8" data-bs-ride="carousel">
+          <!-- TODO: Optimizar el peso de cada una -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../static/img/Certificado-Coderhouse-PS-AI.png" class="d-block w-100" alt="Certificado de Coderhouse Photoshop e Illustrator">
             </div>
-            <div class="px-4">
-              <p class="fs-3">Fundador</p>
-              <p class="fs-6 text-secondary">10/2020 - Actualidad</p>
+            <div class="carousel-item">
+              <img src="../static/img/Certificado-Coderhouse-DesignUXUI.png" class="d-block w-100" alt="Certificado de Coderhouse Diseño UX/UI">
             </div>
-          </div>
-          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="carousel-item">
+              <img src="../static/img/Certificado-SQL.png" class="d-block w-100" alt="Certificado de Quales Group Base de Datos Inicial SQL">
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-header" id="headingSix">
-            <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              <span class="circle mr-1"></span>
-              <p class="m-0">Freelance</p>
+      </div>
+    </section>
+    <section class="containerWorking">
+      <h2 class="titleWorking h2">Experiencia laboral</h2>
+      <!--Accordion-->
+      <div class="containerAccordion">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingFour">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">Codiversity</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Frontend Developer Web and Mobile</p>
+                <p class="body2 accordionTextDate">10/2020- Actualidad</p>
+              </div>
             </div>
-            <div class="px-4">
-              <p class="fs-3">Diseñador UX/UI, Gráfico, Desarrollador web</p>
-              <p class="fs-6 text-secondary">05/2020 - Actualidad</p>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingFive">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">reparteAR</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Fundador</p>
+                <p class="body2 accordionTextDate">10/2020 - Actualidad</p>
+              </div>
+            </div>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingSix">
+              <div class="accordion-button align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <span class="circle mr-1"></span>
+                <p class="m-0 subtitle1">Freelance</p>
+              </div>
+              <div class="accordionDescription px-4">
+                <p class="subtitle2">Diseñador UX/UI, Gráfico, Desarrollador web</p>
+                <p class="body2 accordionTextDate">05/2020 - Actualidad</p>
+              </div>
+            </div>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body body1">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
   </main>
   <footer class="footer">
-    <p class="footerLogo mb-3">Logo</p>
-    <p class="h2 footerMessage mb-3">Desarrollemos y creemos juntos</p>
-    <div class="footerContainerCTA">
-      <button class="buttonPrimary mb-4">Contactar</button>
-      <button class="buttonSecondary mb-3">Descargar CV</button>
-    </div>
-    <div class="footerContainerExternalLinks mb-3">
-      <a href="https://github.com/leoromero97" title="GitHub link" class="footerContainerIcon">
-        <img src="../icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" class="footerContainerIcon">
-        <img src="../icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.behance.net/leonardogromero" title="Behance link" class="footerContainerIcon">
-        <img src="../icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
-      </a>
-      <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" class="footerContainerIcon">
-        <img src="../icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
-      </a>
-    </div>
-    <div class="footerContainerInformation mb-3">
-      <div class="footerInformation">
-        <img src="../icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
-        <p>Buenos Aires, Argentina</p>
+    <div class="containerFooter">
+      <p class="footerLogo mb-4">Logo</p>
+      <p class="h3 footerMessage mb-3">Desarrollemos y creemos juntos</p>
+      <div class="footerContainerCTA">
+        <button class="buttonPrimary mb-4">Contactar</button>
+        <button class="buttonSecondary mb-3">Descargar CV</button>
       </div>
-      <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-        <img src="../icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
-        <p>leonardogerbacio@gmail.com</p>
-      </a>
+      <div class="footerContainerExternalLinks mb-3">
+        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+        </a>
+        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+          <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+        </a>
+      </div>
+      <div class="footerContainerInformation mb-3">
+        <div class="footerInformation">
+          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <p>Buenos Aires, Argentina</p>
+        </div>
+        <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
+          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <p>leonardogerbacio@gmail.com</p>
+        </a>
+      </div>
+      <p class="footerCopyRight body2">Creado por Leonardo Esteban Gerbacio Romero &COPY; 2022</p>
     </div>
-    <p class="footerCopyRight">Creado por Leonardo Esteban Gerbacio Romero &COPY; 2022</p>
   </footer>
 </body>
 <!-- JavaScript Bundle with Popper -->

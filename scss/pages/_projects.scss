@@ -1,0 +1,95 @@
+.projectsContainer {
+  @media (min-width: $min-width-big-desktop) {
+    @include container-page;
+  }
+}
+
+.heroProjects {
+  @include hero-container-section;
+  padding-top: 10rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 14rem 4rem 2rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 144rem;
+    padding-top: 16rem;
+  }
+}
+
+.heroContainerTitleProjects {
+  @include hero-container-title;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+}
+
+.heroVideo {
+  border-radius: 1.2rem;
+  box-shadow: $box-shadow-dark;
+  grid-column: 1/5;
+  min-height: 32rem;
+  width: 100%;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 7/13;
+    grid-row: 1/3;
+  }
+}
+
+.heroContainerCTAProjects {
+  grid-column: 1/5;
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+}
+
+.containerProjects {
+  background-image: url(../../static/img/blur-background.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 1.6rem;
+  width: 100%;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 4rem 4rem;
+  }
+}
+
+.listProjects {
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+    justify-self: center;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 144rem;
+    width: 100%;
+    gap: 6rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

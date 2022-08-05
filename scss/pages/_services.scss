@@ -1,25 +1,47 @@
-
-/* Services */
 .servicesContainer {
   @media (min-width: $min-width-big-desktop) {
+    background-image: url(../../static/img/blur-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include container-page;
   }
 }
 
-.heroContainerServices {
+.heroServices {
   @include hero-container-section;
+  background-image: url(../../static/img/blur-background.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 14rem 4rem 2rem;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    background-image: none;
+    max-width: 144rem;
+    padding-top: 16rem;
+  }
 }
 
 .heroContainerTitleServices {
   @include hero-container-title;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
 }
 
 .containerCarouselDesign,
 .containerCarouselDevelopment {
   background: transparent;
   grid-column: 1/5;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
 
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
@@ -33,9 +55,14 @@
 
 .containerCarouselDevelopment {
   @media (min-width: $min-width-desktop) {
-    grid-column: 1/10;
+    grid-column: 1/13;
   }
 }
+
+.carouselDesign,
+.carouselDevelopment {
+  @include carousel-container-native; 
+} 
 
 .heroContainerCTAServices {
   grid-column: 1/5;
@@ -58,23 +85,20 @@
 }
 
 .containerDevelopment {
-  background-image: url(./img/blur-background.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
-  padding: 2rem 0;
+  padding: 2rem 1.6rem;
 
   @media (min-width: $min-width-tablet) {
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
-    padding: 2rem;
+    padding: 4rem 4rem;
   }
 
-  @media (min-width: $min-width-desktop)  {
-    padding: 4rem 2rem;
+  @media (min-width: $min-width-desktop) {
+    max-width: 144rem;
+    padding: 8rem 4rem;
   }
 }
 
@@ -86,6 +110,10 @@
 
   h3 {
     text-align: center;
+
+    @media (min-width: $min-width-desktop) {
+      text-align: start;
+    }
   }
 
   @media (min-width: $min-width-tablet) {
@@ -95,13 +123,14 @@
   }
 
   @media (min-width: $min-width-desktop)  {
-    grid-column: 1/5;
+    align-items: flex-start;
+    grid-column: 1/7;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 100%;
   }
 }
-
 
 .containerSlogan {
   background-color: #2D3BD7;
