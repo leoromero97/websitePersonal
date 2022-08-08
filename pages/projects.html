@@ -60,25 +60,26 @@
                 <li><a class="dropdown-item" href="#">Inglés</a></li>
               </ul>
             </li>
+            <!-- TODO: Hacer el switch nativo y que funcione 
             <li class="nav-item-theme">
-              <!-- TODO: Hacer el switch nativo -->
               <div class="form-check form-switch">
                 <label class="form-check-label" for="lightSwitch"> Tema </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch"/>
               </div>
             </li>
+            -->
           </ul>
           <div class="nav-social-links">
-            <a href="https://github.com/leoromero97" target="_blank" title="GitHub link" class="footerContainerIcon">
+            <a href="https://github.com/leoromero97" target="_blank" rel="noopener noreferrer" title="GitHub link" class="footerContainerIcon">
               <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
             </a>
-            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" title="Linkedin link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" rel="noopener noreferrer" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
             </a>
-            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
             </a>
-            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
             </a>
           </div>
@@ -97,14 +98,24 @@
         <span class="h1">🚀</span>
         <h1 class="h1">Proyectos</h1>
       </div>
-      <iframe class="heroVideo mb-3" src="https://www.youtube.com/embed/p0OH206z9Wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="heroVideo mb-3" src="https://open.spotify.com/embed/playlist/0z20OssE9QvmfOMxrwS4BM?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       <div class="heroContainerCTAProjects">
         <p class="body2">
           A continuación presento una lista de proyectos en los que estuve trabajando hasta el día de hoy, me encantaría que hagamos uno en conjunto.
         </p>
-        <button class="buttonPrimary mb-2-4">Contactar</button>
+        <p class="body2">
+          También te dejo mi playlist preferida en Spotify que escucho para trabajar para acompañarte mientras mirás los proyectos.
+        </p>
+        <a
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-2-4"
+        >
+          Contactar
+        </a>
       </div>
       <a href="#projects" class="containerArrows">
+        Bajar
         <p class="down">
           <span></span>
           <span></span>
@@ -123,7 +134,7 @@
           <div class="cardProjectDescription">
             <p class="h3">EmpreBa - Identidad de Marca</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pill body2">Diseño</span>
@@ -140,7 +151,7 @@
           <div class="cardProjectDescription">
             <p class="h3">EmpreBa - Diseño de Aplicación Móvil</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pill body2">Diseño</span>
@@ -157,7 +168,7 @@
           <div class="cardProjectDescription">
             <p class="h3">Florencia Gordillo - Identidad de Marca</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pill body2">Diseño</span>
@@ -174,7 +185,7 @@
           <div class="cardProjectDescription">
             <p class="h3">Movie Catalog - Aplicación móvil</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pillDeveloper body2">Desarrollo</span>
@@ -191,7 +202,7 @@
           <div class="cardProjectDescription">
             <p class="h3">reparteAR - Landing Page</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pillDeveloper body2">Desarrollo</span>
@@ -208,7 +219,7 @@
           <div class="cardProjectDescription">
             <p class="h3">To Do List - Aplicación web</p>
             <div class="containerCardProjectCTA">
-              <button class="buttonLink">
+              <button class="buttonSmall">
                 Ver detalle
               </button>
               <span class="pillDeveloper body2">Desarrollo</span>
@@ -223,30 +234,42 @@
       <p class="footerLogo mb-4">Logo</p>
       <p class="h3 footerMessage mb-3">Desarrollemos y creemos juntos</p>
       <div class="footerContainerCTA">
-        <button class="buttonPrimary mb-4">Contactar</button>
-        <button class="buttonSecondary mb-3">Descargar CV</button>
+        <a 
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-4"
+        >
+          Contactar
+        </a>
+        <a 
+          href="../static/CV-Leonardo-Esteban-Gerbacio-Romero.pdf"
+          download="CV Leonardo Gerbacio Romero"
+          class="buttonSecondary mb-3"
+        >
+          Descargar CV
+        </a>
       </div>
       <div class="footerContainerExternalLinks mb-3">
-        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" class="footerContainerIcon">
+        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
         </a>
-        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
         </a>
-        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
         </a>
-        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
         </a>
       </div>
       <div class="footerContainerInformation mb-3">
         <div class="footerInformation">
-          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>Buenos Aires, Argentina</p>
         </div>
         <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>leonardogerbacio@gmail.com</p>
         </a>
       </div>
@@ -256,5 +279,4 @@
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="switch.js"></script>
 </html>

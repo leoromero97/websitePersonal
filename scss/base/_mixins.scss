@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.8rem;
-  padding: 4rem 1.6rem 2rem;
+  padding: 10rem 1.6rem 2rem;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(12, 1fr);
@@ -47,12 +47,12 @@
   
   /* Tamaño del scroll */
   &::-webkit-scrollbar {
-    height: 6px;
+    height: 1rem;
   }
 
   /* Estilos barra (thumb) de scroll */
   &::-webkit-scrollbar-thumb {
-    background-color: #1AB9D4;
+    background-color: $color-primary;
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -61,11 +61,11 @@
   }
 
   &::-webkit-scrollbar-thumb:active {
-    background-color: #9EE8F4;
+    background-color: $color-primary-50;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #9EE8F4;
+    background: $color-primary-50;
   }
 
   /* Estilos track de scroll */

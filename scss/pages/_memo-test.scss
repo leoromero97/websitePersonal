@@ -6,7 +6,7 @@
 
 .heroMemoTest {
   @include hero-container-section;
-  padding-top: 10rem;
+  
   text-align: center;
 
   @media (min-width: $min-width-tablet) {

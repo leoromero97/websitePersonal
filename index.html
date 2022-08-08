@@ -24,13 +24,13 @@
           Logo
         </a>
         <!-- TODO: Hacer el burger menu nativo con Javascript-->
-        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <div class="burger">
             <span class="lineOne"></span>
             <span class="lineTwo"></span>
             <span class="lineThree"></span>
           </div>
-        </div>
+        </nav>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <a class="navbar-brand" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             Logo
@@ -60,26 +60,27 @@
                 <li><a class="dropdown-item" href="#">Inglés</a></li>
               </ul>
             </li>
+            <!-- TODO: Hacer el switch nativo y que funcione 
             <li class="nav-item-theme">
-              <!-- TODO: Hacer el switch nativo -->
               <div class="form-check form-switch">
                 <label class="form-check-label" for="lightSwitch"> Tema </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch"/>
               </div>
             </li>
+            -->
           </ul>
           <div class="nav-social-links">
-            <a href="https://github.com/leoromero97" target="_blank" title="GitHub link" class="footerContainerIcon">
-              <img src="static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+            <a href="https://github.com/leoromero97" target="_blank" rel="noopener noreferrer" title="GitHub link" class="footerContainerIcon">
+              <img src="static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" height="28" width="28" class="footerIconExternal">
             </a>
-            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" title="Linkedin link" target="_blank" class="footerContainerIcon">
-              <img src="static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" rel="noopener noreferrer" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+              <img src="static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" height="28" width="28" class="footerIconExternal">
             </a>
-            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
-              <img src="static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+              <img src="static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" height="28" width="28" class="footerIconExternal">
             </a>
-            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
-              <img src="static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+              <img src="static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" height="28" width="28" class="footerIconExternal">
             </a>
           </div>
           <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,58 +102,64 @@
         <div class="cardService mr-2-4">
           <span class="pill body1 mb-1">Diseño</span>
           <p class="subtitle1">Diseño Landing Page</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pillDeveloper body1 mb-1">Desarrollo</span>
           <p class="subtitle1">Desarrollo de landing page</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pill body1 mb-1">Diseño</span>
           <p class="subtitle1">Diseño de Flyers</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pillDeveloper body1 mb-1">Desarrollo</span>
           <p class="subtitle1">Desarrollo de Ecommerce</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pill body1 mb-1">Diseño</span>
           <p class="subtitle1">Diseño aplicación móvil</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pillDeveloper body1 mb-1">Desarrollo</span>
           <p class="subtitle1">Desarrollo Aplicación Web</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
         <div class="cardService mr-2-4">
           <span class="pill body1 mb-1">Diseño</span>
           <p class="subtitle1">Creación de Manual de Marca</p>
-          <button class="buttonPrimarySmall">
+          <button class="buttonSmall">
             Ver más
           </button>
         </div>
       </div>
       <div class="heroContainerCTAHome mb-2-4">
         <p class="h3 mb-1-6">¿Tenes una idea para diseñar o desarrollar?</p>
-        <button class="buttonPrimary mb-2-4">Contactar</button>
+        <a 
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-2-4">
+          Contactar
+        </a>
       </div>
       <a href="#about" class="containerArrows">
+        Bajar
         <p class="down">
           <span></span>
           <span></span>
@@ -161,7 +168,7 @@
     </section>
     <section id="about" class="summaryContainerHome">
       <div class="summaryContainerImgHome">
-        <img src="static/img/leo-hero.png" alt="Foto de frente de Leo Romero" title="Foto de Leo Romero" class="summaryLeoImgHome">
+        <img src="static/img/leo-hero.png" alt="Foto de frente de Leo Romero" title="Foto de Leo Romero" height="315" width="260" class="summaryLeoImgHome">
       </div>
       <div class="summaryContainerDescriptionHome">
         <h2 class="h2 mb-2-4">Leonardo Esteban, Gerbacio Romero</h2>
@@ -172,93 +179,119 @@
           Me encanta poder ayudar de manera pro activa a las demás personas, escuchar música, entrenar y ¡siempre tengo ganas de aprender y superarme día a día!
         </p>
       </div>
+        <h3 class="titleEducation h2">Momentos destacados</h3>
+        <div class="containerCarouselNotes">
+          <div class="carouselCardsNotes">
+            <a 
+              href="https://www.instagram.com/reel/Cgw2FxJgVg-/?utm_source=ig_web_copy_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="cardNote mr-2-4"
+              >
+              <img src="../static/img/talento-argentino.png" alt="Imagen nota previa" height="100" width="200" class="noteImage">
+              <p class="noteLabel">
+                Talento Argentino - Nota sobre emprender, trabajar, estudiar y superarse
+              </p>
+            </a>
+            <a 
+              href="https://www.instagram.com/p/CUfmQvPL_B9/?utm_source=ig_web_copy_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="cardNote mr-2-4"
+            >
+            <img src="../static/img/entrevistas-que-empujan.png" alt="Imagen nota previa" height="100" width="200" class="noteImage">
+            <p class="noteLabel">
+              Programa empujar - Entrevistas que empujan 
+            </p>
+            </a>
+            <a 
+              href="https://www.linkedin.com/pulse/mi-experiencia-de-la-pelota-programaci%25C3%25B3n-6-claves-dar/?trackingId=Bk51l9gORUmeSgQvqyH%2BMQ%3D%3D" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="cardNote mr-2-4"
+            >
+              <img src="../static/img/de-la-pelota-a-la-programacion.png" alt="Imagen nota previa" height="100" width="200" class="noteImage">
+              <p class="noteLabel">
+                Nota en Linkedin - Mi experiencia: de la pelota a la programación. 6 Claves para dar vuelta el partido
+              </p>
+            </a>
+          </div>
+        </div>
       <div class="containerCarouselToolsHome">
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-html.svg" alt="Icono HTML" >
+          <img src="static/icons/ic-html.svg" alt="Icono HTML" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-css.svg" alt="Icono CSS" >
+          <img src="static/icons/ic-css.svg" alt="Icono CSS" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-javascript.svg" alt="Icono Javscript" >
+          <img src="static/icons/ic-javascript.svg" alt="Icono Javscript" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-figma.svg" alt="Icono Figma" >
+          <img src="static/icons/ic-figma.svg" alt="Icono Figma" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-illustrator.svg" alt="Icono Illustrator" >
+          <img src="static/icons/ic-illustrator.svg" alt="Icono Illustrator" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-photoshop.svg" alt="Icono Photoshop" >
+          <img src="static/icons/ic-photoshop.svg" alt="Icono Photoshop" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-github.svg" alt="Icono Github" >
+          <img src="static/icons/ic-github.svg" alt="Icono Github" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-bootstrap.svg" alt="Icono Bootstrap" >
+          <img src="static/icons/ic-sass.svg" alt="Icono Sass" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-next-js.svg" alt="Icono Next js" >
+          <img src="static/icons/ic-tailwind.svg" alt="Icono Tailwind" height="46" width="46" class="tool">
+        </div>
+        <div class="vectorTool mr-1">
+          <img src="static/icons/ic-bootstrap.svg" alt="Icono Bootstrap" height="46" width="46" class="tool">
+        </div>
+        <div class="vectorTool mr-1">
+          <img src="static/icons/ic-next-js.svg" alt="Icono Next js" height="46" width="46" class="tool">
         </div class="vectorTool mr-1">
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-google-calendar.svg" alt="Icono Google Calendar" >
-        </div>
-          <div class="vectorTool mr-1">
-          <img src="static/icons/ic-docs.svg" alt="Icono Google Docs" >
+          <img src="static/icons/ic-react.svg" alt="Icono React js" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-google-drive.svg" alt="Icono Google Drive" >
+          <img src="static/icons/ic-jira.svg" alt="Icono Jira" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-google-forms.svg" alt="Icono Google Form" >
+          <img src="static/icons/ic-trello.svg" alt="Icono Trello" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-jira.svg" alt="Icono Jira" >
+          <img src="static/icons/ic-google-calendar.svg" alt="Icono Google Calendar" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-meet.svg" alt="Icono Google Meet" >
+          <img src="static/icons/ic-google-drive.svg" alt="Icono Google Drive" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-notion.svg" alt="Icono Notion" >
+          <img src="static/icons/ic-meet.svg" alt="Icono Google Meet" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-Vue.svg" alt="Icono Vue" >
+          <img src="static/icons/ic-notion.svg" alt="Icono Notion" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-nuxt.svg" alt="Icono Nuxt js" >
+          <img src="static/icons/ic-Vue.svg" alt="Icono Vue" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-php.svg" alt="Icono php" >
+          <img src="static/icons/ic-nuxt.svg" alt="Icono Nuxt js" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-react.svg" alt="Icono React js" >
+          <img src="static/icons/ic-wordpress.svg" alt="Icono Wordpress" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-sass.svg" alt="Icono Sass" >
+          <img src="static/icons/ic-php.svg" alt="Icono php" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-google-sheets.svg" alt="Icono Google Sheet" >
+          <img src="static/icons/ic-slack.svg" alt="Icono Slack" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-slack.svg" alt="Icono Slack" >
+          <img src="static/icons/ic-typescript.svg" alt="Icono Typescript" height="46" width="46" class="tool">
         </div>
         <div class="vectorTool mr-1">
-          <img src="static/icons/ic-tailwind.svg" alt="Icono Tailwind" >
-        </div>
-        <div class="vectorTool mr-1">
-          <img src="static/icons/ic-trello.svg" alt="Icono Trello" >
-        </div>
-        <div class="vectorTool mr-1">
-          <img src="static/icons/ic-typescript.svg" alt="Icono Typescript" >
-        </div>
-        <div class="vectorTool mr-1">
-          <img src="static/icons/ic-vsc.svg" alt="Icono Visual Studio Code" >
-        </div>
-        <div class="vectorTool mr-1">
-          <img src="static/icons/ic-wordpress.svg" alt="Icono Wordpress" >
-        </div>
-        <div class="vectorTool mr-1">
-          <img src="static/icons/ic-zoom.svg" alt="Icono Zoom" >
+          <img src="static/icons/ic-vsc.svg" alt="Icono Visual Studio Code" height="46" width="46" class="tool">
         </div>
       </div>
       <div class="containerLinkMemotest">
@@ -271,30 +304,42 @@
       <p class="footerLogo">Logo</p>
       <p class="h3 footerMessage">Desarrollemos y creemos juntos</p>
       <div class="footerContainerCTA">
-        <button class="buttonPrimary mb-4">Contactar</button>
-        <button class="buttonSecondary mb-3">Descargar CV</button>
+        <a 
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-4"
+        >
+          Contactar
+        </a>
+        <a 
+          href="./static/CV-Leonardo-Esteban-Gerbacio-Romero.pdf"
+          download="CV Leonardo Gerbacio Romero"
+          class="buttonSecondary mb-3"
+        >
+          Descargar CV
+        </a>
       </div>
       <div class="footerContainerExternalLinks">
-        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" class="footerContainerIcon">
-          <img src="static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
+        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+          <img src="static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" height="28" width="28" class="footerIconExternal">
         </a>
-        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" class="footerContainerIcon">
-          <img src="static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
+        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+          <img src="static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" height="28" width="28" class="footerIconExternal">
         </a>
-        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
-          <img src="static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
+        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+          <img src="static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" height="28" width="28" class="footerIconExternal">
         </a>
-        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
-          <img src="static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
+        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
+          <img src="static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" height="28" width="28" class="footerIconExternal">
         </a>
       </div>
       <div class="footerContainerInformation">
         <div class="footerInformation">
-          <img src="static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>Buenos Aires, Argentina</p>
         </div>
         <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-          <img src="static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>leonardogerbacio@gmail.com</p>
         </a>
       </div>
@@ -304,5 +349,4 @@
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="switch.js"></script>
 </html>

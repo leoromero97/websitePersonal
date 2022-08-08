@@ -60,25 +60,26 @@
                 <li><a class="dropdown-item" href="#">Inglés</a></li>
               </ul>
             </li>
+            <!-- TODO: Hacer el switch nativo y que funcione 
             <li class="nav-item-theme">
-              <!-- TODO: Hacer el switch nativo -->
               <div class="form-check form-switch">
                 <label class="form-check-label" for="lightSwitch"> Tema </label>
                 <input class="form-check-input" type="checkbox" id="lightSwitch"/>
               </div>
             </li>
+            -->
           </ul>
           <div class="nav-social-links">
-            <a href="https://github.com/leoromero97" target="_blank" title="GitHub link" class="footerContainerIcon">
+            <a href="https://github.com/leoromero97" target="_blank" rel="noopener noreferrer" title="GitHub link" class="footerContainerIcon">
               <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
             </a>
-            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" title="Linkedin link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.linkedin.com/in/leonardogerbacioromero" target="_blank" rel="noopener noreferrer" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
             </a>
-            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
             </a>
-            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+            <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
               <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
             </a>
           </div>
@@ -99,19 +100,45 @@
       </div>
       <div class="heroContainerDescription">
         <p class="body1 mb-4">
-          Me podes decir Leo, tengo 25 años, estudiante, emprendedor, Desarrollador Front end, Diseñador UX/UI y Técnico en Análisis de Sistemas Informáticos.
+          Mi nombre es Leonardo Esteban Gerbacio Romero, me llaman Leo! Tengo 25 años, estudiante, emprendedor, Desarrollador Front end, Diseñador UX/UI y Técnico en Análisis de Sistemas Informáticos.
+          Puedo decir que me apasiona la tecnología. Disfruto el poder crear software y compartir conocimientos y experiencias.
         </p>
         <p class="body1 mb-4">
-          Me encanta poder ayudar de manera pro activa a las demás personas, escuchar música, entrenar y siempre tengo ganas de aprender y superarme día a día !
+          Actualmente trabajo como Desarrollador Frontend y Disñador UX/UI en 
+          <a href="https://codiversity.tech/" target="_blank" rel="noopener noreferrer">
+            Codiversity
+          </a>
+          , una empresa de tecnología social que desarrolla habilidades y talento digital, tomo trabajos freelances de desarrollo o diseño y también soy fundador de
+          <a href="http://repartear.com/" target="_blank" rel="noopener noreferrer">
+            reparteAR
+          </a>, un emprendimiento de envíos principalmente en moto, en CABA y GBA.
+        </p>
+      </div>
+      <div class="heroContainerDescriptionTwo">
+        <h4 class="h3">¿Mis objetivos?</h4>
+        <p class="body1 mb-4">
+          Poder lanzar la primera versión de la aplicación o plataforma para poder implementar en reparteAR y así mejorar los procesos de la mensajería. Hablar, escribir y entender fluidamente inglés, 
+          no parar de capacitarme y poder visitar un par de países, me gustaría viajar al exterior.
+        </p>
+        <h4 class="h3">¿Un consejo?</h4>
+        <p class="body1 mb-4">
+          Lo mejor que podés hacer es nunca rendirte, seguir por tus sueños, aunque te frustres, solo son momentos, al fin y al cabo con constancia, dedicación y organización podés cumplir lo que te propongas.
+          Rodeate de personas con tus mismos intereses y objetivos, el camino va a ser disfrutado el doble. 
+          Uno de mis sueños era trabajar en el mundo IT, y acá estoy, solo es el comienzo: <strong>el techo se lo pone uno mismo porque una persona motivada no tiene límites.</strong>          
         </p>
       </div>
       <div class="heroContainerCTAAboutMe mb-2-4">
         <p class="h3 mb-1-6">¿Tenes una idea para diseñar o desarrollar?</p>
-        <button class="buttonPrimary mb-2-4">Contactar</button>
+        <a 
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-2-4">
+          Contactar
+        </a>
       </div>
     </section>
     <section class="containerEducation">
-      <h2 class="titleEducation h2">Educación</h2>
+      <h3 class="titleEducation h2">Educación</h3>
       <!--Accordion-->
       <div class="containerAccordion">
         <div class="accordion" id="accordionExample">
@@ -127,9 +154,11 @@
               </div>
             </div>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                En esta carrera se aprende todos los pasos para crear una página web increíble, un manual de marca y el diseño de una app y plataforma. En la primera etapa, se utiliza Photoshop e Illustrator, las dos herramientas más usadas para diseño. 
+                Luego, en los cursos de Diseño UX/UI básico y avanzado, se aprende a diseñar una aplicación y una plataforma pensada para el usuario y su comportamiento.
+                Por último, en el curso de Desarrollo Web se aprende a codear esas páginas con HTML & CSS.
+              </p>
             </div>
           </div>
           <div class="accordion-item">
@@ -144,9 +173,10 @@
               </div>
             </div>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                Carrera corta de tres años, de nivel superior con el título en Técnico en Análisis en Sistemas Informáticos, se ven temas fundamentales como las bases de las matemáticas,
+                 programación, base de datos, redes, planificación, integración, e implementación de sistemas informáticos. 
+              </p>
             </div>
           </div>
           <div class="accordion-item">
@@ -161,14 +191,13 @@
               </div>
             </div>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                Curso intensivo sobre conceptos de base de datos y el manejo del gestor de Base de Datos SQL Express
+              </p>
             </div>
           </div>
         </div>
         <div id="carouselExampleControls" class="carousel slide mb-8" data-bs-ride="carousel">
-          <!-- TODO: Optimizar el peso de cada una -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../static/img/Certificado-Coderhouse-PS-AI.png" class="d-block w-100" alt="Certificado de Coderhouse Photoshop e Illustrator">
@@ -190,7 +219,7 @@
       </div>
     </section>
     <section class="containerWorking">
-      <h2 class="titleWorking h2">Experiencia laboral</h2>
+      <h3 class="titleWorking h2">Experiencia laboral</h3>
       <!--Accordion-->
       <div class="containerAccordion">
         <div class="accordion" id="accordionExample">
@@ -201,14 +230,17 @@
                 <p class="m-0 subtitle1">Codiversity</p>
               </div>
               <div class="accordionDescription px-4">
-                <p class="subtitle2">Frontend Developer Web and Mobile</p>
+                <p class="subtitle2">Frontend Developer & UX/UI Designer</p>
                 <p class="body2 accordionTextDate">10/2020- Actualidad</p>
               </div>
             </div>
             <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                Mi primer trabajo en relación de dependencia, primero como Frontend Developer Trainee, después Junior y actualmente Desarrollador Frontend y Diseñador UX/UI.
+                Capacitaciones y participaciones en proyectos con tecnologías como React, React Native, Next, Vue, Nuxt, Tailwind CSS, SASS, Chackra UI y CSS para el desarrollo.
+                Uso de herramientas como Trello, Jira, GitHub, Slack, Google Tools, Gather y Figma.
+                También tuve participaciones en proyectos de UX, implementando conocimientos para crear taskflows, userflows, wireflows, wireframes y bajadas de feedback en las pruebas de usabilidad.  
+              </p>
             </div>
           </div>
           <div class="accordion-item">
@@ -223,9 +255,10 @@
               </div>
             </div>
             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                Mi primer emprendimiento con todas las letras, con todo lo que implica, desde una marca hasta operativamente en procesos internos. Me tocó y me toca hacer de todo, mis tareas fueron
+                repartidor en moto, atención al cliente, gestor de finanzas y facturación, control de datos, reclutador, administrador de redes, diseñador y desarrollador.
+              </p>
             </div>
           </div>
           <div class="accordion-item">
@@ -240,9 +273,10 @@
               </div>
             </div>
             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body body1">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+              <p class="accordion-body body1">
+                También tomo trabajos freelance de desarrollo o de diseño, o ambas, puedo realizarlos solos o en equipo, me gusta que los clientes queden contentos con
+                el trabajo realizado, me gusta llegar a fondo para que juntos creemos la idea de su proyecto.
+              </p>
             </div>
           </div>
         </div>
@@ -254,30 +288,42 @@
       <p class="footerLogo mb-4">Logo</p>
       <p class="h3 footerMessage mb-3">Desarrollemos y creemos juntos</p>
       <div class="footerContainerCTA">
-        <button class="buttonPrimary mb-4">Contactar</button>
-        <button class="buttonSecondary mb-3">Descargar CV</button>
+        <a
+          href="https://api.whatsapp.com/send?phone=541152212488&text=Hola Leo, me contacto por tus servicios web o de diseño !" 
+          target="blanck" 
+          class="buttonPrimary mb-4"
+        >
+          Contactar
+        </a>
+        <a 
+          href="../static/CV-Leonardo-Esteban-Gerbacio-Romero.pdf"
+          download="CV Leonardo Gerbacio Romero"
+          class="buttonSecondary mb-3"
+        >
+          Descargar CV
+        </a>
       </div>
       <div class="footerContainerExternalLinks mb-3">
-        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" class="footerContainerIcon">
+        <a href="https://github.com/leoromero97" title="GitHub link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Github.svg" alt="GitHub icono" title="GitHub icono" class="footerIconExternal">
         </a>
-        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.linkedin.com/in/leonardogerbacioromero" title="Linkedin link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Linkedin.svg" alt="Linkedin icono" title="Linkedin icono" class="footerIconExternal">
         </a>
-        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.behance.net/leonardogromero" title="Behance link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Behance.svg" alt="Behance icono" title="Behance icono" class="footerIconExternal">
         </a>
-        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" class="footerContainerIcon">
+        <a href="https://www.instagram.com/leo.romerooo" title="Instagram link" target="_blank" rel="noopener noreferrer" class="footerContainerIcon">
           <img src="../static/icons/Icon-Instagram.svg" alt="Instagram icono" title="Instagram icono" class="footerIconExternal">
         </a>
       </div>
       <div class="footerContainerInformation mb-3">
         <div class="footerInformation">
-          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="../static/icons/Icon-Location.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>Buenos Aires, Argentina</p>
         </div>
         <a href="mailto:leonardogerbacio@gmail.com" class="footerInformation">
-          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" class="mr-1">
+          <img src="../static/icons/Icon-Email.svg" alt="Icono de ubicación" title="Icono de ubicación" height="24" width="24" class="mr-1">
           <p>leonardogerbacio@gmail.com</p>
         </a>
       </div>
@@ -287,5 +333,4 @@
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="switch.js"></script>
 </html>

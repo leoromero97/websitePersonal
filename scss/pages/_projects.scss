@@ -1,4 +1,9 @@
 .projectsContainer {
+  background-image: url(../../static/img/blur-background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media (min-width: $min-width-big-desktop) {
     @include container-page;
   }
@@ -6,8 +11,7 @@
 
 .heroProjects {
   @include hero-container-section;
-  padding-top: 10rem;
-
+  
   @media (min-width: $min-width-tablet) {
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
@@ -56,10 +60,6 @@
 }
 
 .containerProjects {
-  background-image: url(../../static/img/blur-background.png);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 4rem 1.6rem;
