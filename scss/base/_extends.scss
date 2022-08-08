@@ -13,13 +13,20 @@
   font-size: 1.6rem;
   font-weight: 600;
   color: $color-dark-75;
+  max-width: 28rem;
   min-width: 28rem;
   overflow: hidden;
   padding: 1.6rem 2.4rem;
+  text-decoration: none;
 
   &:hover {
+    color: $color-dark-75;
     box-shadow: $box-shadow-dark;
     transition: ease-in-out 0.6s;
+  }
+
+  &:active {
+    color: $color-dark-75;
   }
 }
 

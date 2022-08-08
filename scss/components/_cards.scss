@@ -6,15 +6,27 @@
   color: $color-white-75;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2.4rem;
-  padding: 1.6rem 2rem;
-  min-height: 28rem;
-  min-width: 22rem;
+  padding: 2rem 1.6rem;
+  flex-shrink: 0;
+  max-width: 22rem;
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 26rem;
+    min-height: 30rem;
+    padding: 4rem 2rem;
+
+    &:hover {
+      transition: ease-in-out 0.6s;
+      transform: translateY(0.6rem);
+    }
+  }
 }
 
 .cardProject {
   align-items: flex-start;
+  background-color: transparent;
   border-radius: 1.2rem;
   box-shadow: 0 8px 24px $color-dark-50;
   display: flex;
@@ -27,7 +39,6 @@
 
   @media (min-width: $min-width-desktop) {
     &:hover {
-      background-color: $color-primary-50;
       box-shadow: 0 8px 24px $color-dark;
     }
   }
@@ -77,8 +88,8 @@
   color: $color-white-75;
   display: flex;
   flex-direction: column;
-  padding: 1.6rem 1.6rem;
   gap: 2.4rem;
+  padding: 1.6rem 1.6rem;
   width: 100%;
 }
 
@@ -86,4 +97,42 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+
+.cardNote {
+  background-color: $color-dark-50;
+  color: $color-white-75;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px $color-dark-50;
+  display: flex;
+  flex-direction: column;
+  min-height: 32rem;
+  min-width: 24rem;
+  max-width: 24rem;
+  transition: ease all 0.6s;
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 34rem;
+    min-height: 36rem;
+
+    &:hover {
+      box-shadow: 0 8px 24px $color-dark;
+    }
+  }
+}
+
+.noteImage {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+
+  @media (min-width: $min-width-desktop) {
+    height: 30rem;
+  }
+}
+
+.noteLabel {
+  padding: 1.6rem 1rem;
 }

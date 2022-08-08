@@ -6,12 +6,12 @@
 
 .heroLetsWork {
   @include hero-container-section;
+  
   background-image: url(../../static/img/blur-background.png);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 4rem;
-  padding-top: 10rem;
 
   @media (min-width: $min-width-tablet) {
     grid-template-columns: repeat(12, 1fr);

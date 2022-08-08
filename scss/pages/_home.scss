@@ -13,7 +13,6 @@
 
 .heroContainerHome {
   @include hero-container-section;
-  padding-top: 10rem;
 
   @media (min-width: $min-width-tablet) {
     grid-template-columns: repeat(12, 1fr);
@@ -69,7 +68,7 @@
 
 .containerCarouselCardsHome {
   @include carousel-container-native;
-  margin-bottom: map-get($map: $margin-spaces, $key: m4);
+    margin-bottom: map-get($map: $margin-spaces, $key: m4);
 
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
@@ -81,6 +80,9 @@
 }
 
 .heroContainerCTAHome {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   grid-column: 1/5;
 
   p {
@@ -88,9 +90,6 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     grid-column: 1/13;
     margin-bottom: 10rem;
   }
@@ -145,10 +144,12 @@
 /* TODO: Optimizar el tamaño de la imagen del html*/
 .summaryLeoImgHome {
   height: 28rem;
+  width: 24rem;
   margin-bottom: map-get($map: $margin-spaces, $key: m3);
 
   @media (min-width: $min-width-desktop) {
     height: 30rem;
+    width: 26rem;
   }
 }
 
@@ -170,8 +171,26 @@
   }
 }
 
+.containerCarouselNotes {
+  grid-column: 1/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: $min-width-tablet) {
+    grid-column: 1/13;
+  }
+}
+
+.carouselCardsNotes {
+  @include carousel-container-native;
+  margin-bottom: map-get($map: $margin-spaces, $key: m4);
+}
+
 .containerCarouselToolsHome {
   @include carousel-container-native;
+  
   @media (min-width: $min-width-tablet) {
     grid-column: 1/13;
   }
@@ -197,6 +216,11 @@
       background-color: $color-primary-50;
     }
   }
+}
+
+.tool {
+  min-height: 4.6rem;
+  min-width: 4.6rem;
 }
 
 .containerLinkMemotest {
