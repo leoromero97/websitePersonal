@@ -931,16 +931,10 @@
       grid-row: 1/3;
       display: flex; } }
 
-/* TODO: Optimizar el tamaño de la imagen del html*/
 .summaryLeoImgHome {
   height: 31.5rem;
   width: 26rem;
-  margin-bottom: 3rem;
-  /*   @media (min-width: $min-width-desktop) {
-
-      height: 50rem;
-  width: 41rem;
-  } */ }
+  margin-bottom: 3rem; }
 
 .summaryContainerDescriptionHome {
   grid-column: 1/5; }
