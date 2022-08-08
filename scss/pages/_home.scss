@@ -143,14 +143,15 @@
 }
 /* TODO: Optimizar el tamaño de la imagen del html*/
 .summaryLeoImgHome {
-  height: 28rem;
-  width: 24rem;
+  height: 31.5rem;
+  width: 26rem;
   margin-bottom: map-get($map: $margin-spaces, $key: m3);
 
-  @media (min-width: $min-width-desktop) {
-    height: 30rem;
-    width: 26rem;
-  }
+/*   @media (min-width: $min-width-desktop) {
+
+      height: 50rem;
+  width: 41rem;
+  } */
 }
 
 .summaryContainerDescriptionHome {

@@ -933,13 +933,14 @@
 
 /* TODO: Optimizar el tamaño de la imagen del html*/
 .summaryLeoImgHome {
-  height: 28rem;
-  width: 24rem;
-  margin-bottom: 3rem; }
-  @media (min-width: 1024px) {
-    .summaryLeoImgHome {
-      height: 30rem;
-      width: 26rem; } }
+  height: 31.5rem;
+  width: 26rem;
+  margin-bottom: 3rem;
+  /*   @media (min-width: $min-width-desktop) {
+
+      height: 50rem;
+  width: 41rem;
+  } */ }
 
 .summaryContainerDescriptionHome {
   grid-column: 1/5; }
