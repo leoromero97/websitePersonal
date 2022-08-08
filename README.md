@@ -6,17 +6,19 @@ Página web personal de tipo portfolio de Leonardo E. Gerbacio Romero. Metodolog
 ## Languages / tools
 - HTML
 - CSS
-- Bootstrap 
+- Bootstrap
+- SASS
 - Javscript
+- Netlify
 
 ## Development environment
-link github pages
+https://leogromero-website.netlify.app/
 
 ## Preview
 
 ### Mobile
-![Home-readme-mobile](https://user-images.githubusercontent.com/57498210/179671180-a243e8e6-35d5-41aa-a6d0-51062516061a.png)
+![mobile](https://user-images.githubusercontent.com/57498210/183333383-d8595751-5f19-489d-aafa-08669d7cfa43.png)
 
 ### Desktop
-![Home-readme-desktop](https://user-images.githubusercontent.com/57498210/179671193-e54af920-6f40-4804-9706-cdb70d6720b0.png)
+![desktop](https://user-images.githubusercontent.com/57498210/183333401-22d186de-18d3-4ad6-8355-0bdd09d064b0.png)
 
