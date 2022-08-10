@@ -40,15 +40,18 @@
   background-color: transparent;
   border: 2px solid $color-primary-75;
   color: $color-primary-75;
-  max-width: 14rem;
-  min-width: 14rem;
-  padding: 0.8rem 1.6rem;
+  min-width: 15rem;
+  padding: 0.8rem 1.4rem;
 
   &:hover {
     border-color: $color-primary;
     color: $color-primary;
     background-color: $color-white-75;
     box-shadow: none;
+  }
+
+  @media (min-width:$min-width-desktop) {
+    padding: 0.8rem 1.6rem;
   }
 }
 
