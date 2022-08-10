@@ -48,6 +48,9 @@
 
 .heroContainerCTAProjects {
   grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   p {
     margin-bottom: 4rem;
