@@ -753,25 +753,30 @@
       max-width: 70rem; } }
   @media (min-width: 1024px) {
     .carousel {
-      min-width: 102rem; } }
+      display: flex;
+      align-items: center; } }
 
 .carousel-inner,
 .carousel-item {
-  height: 100%;
-  width: 100%; }
+  border-radius: 1.2rem;
+  height: 100%; }
   @media (min-width: 1024px) {
     .carousel-inner,
     .carousel-item {
-      min-height: 40rem; } }
+      height: 35.2rem;
+      width: 45.1rem; } }
   .carousel-inner img,
   .carousel-item img {
-    height: 25.6rem;
-    object-fit: fill;
-    min-width: 33rem; }
+    object-fit: cover;
+    height: 35.2rem; }
     @media (min-width: 1024px) {
       .carousel-inner img,
       .carousel-item img {
-        min-height: 40rem; } }
+        width: 45.1rem; } }
+
+.carousel-item, .carousel-item .active {
+  color: #F2F5FF;
+  text-align: center; }
 
 .carousel-text-control {
   color: transparent; }
