@@ -218,17 +218,23 @@
   }
 
   img {
-    object-fit: cover;
     height: 35.2rem;
+    margin-bottom: 2rem;
+    max-width: 45.1rem;
+    object-fit: cover;
+    width: 100%;
 
-    @media (min-width: $min-width-desktop) {
+    @media (min-width: $min-width-tablet) {
       width: 45.1rem;
     }
   } 
 }
 
 .carousel-item, .carousel-item .active {
-  color: $color-white-75;
+  color: $color-primary-50;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
   text-align: center;
 }
 
