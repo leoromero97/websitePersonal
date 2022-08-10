@@ -188,6 +188,7 @@
     border-top-left-radius: 1.2rem;
     border-top-right-radius: 1.2rem;
     object-fit: cover;
+    object-position: top left;
     height: 50rem; } }
 
 @media (min-width: 1024px) {
@@ -423,6 +424,10 @@
     .navbar-brand {
       cursor: pointer;
       font-size: 2.2rem; } }
+  .navbar-brand::hover {
+    color: #3071E7; }
+  .navbar-brand:active {
+    color: #3071E7; }
 
 .burger,
 .close {
@@ -514,6 +519,12 @@
 @media (min-width: 992px) {
   .nav-item a {
     font-size: 1.8rem; } }
+
+.nav-item a::hover {
+  color: #3071E7; }
+
+.nav-item a:active {
+  color: #3071E7; }
 
 .nav-link {
   color: #EAEDF6;
@@ -746,19 +757,24 @@
 
 .carousel-inner,
 .carousel-item {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   @media (min-width: 1024px) {
     .carousel-inner,
     .carousel-item {
       min-height: 40rem; } }
   .carousel-inner img,
   .carousel-item img {
+    height: 25.6rem;
     object-fit: fill;
-    height: 100%; }
+    min-width: 33rem; }
     @media (min-width: 1024px) {
       .carousel-inner img,
       .carousel-item img {
         min-height: 40rem; } }
+
+.carousel-text-control {
+  color: transparent; }
 
 .containerWorking {
   padding: 2rem 1.6rem; }
@@ -1298,7 +1314,10 @@
       grid-row: 1/3; } }
 
 .heroContainerCTAProjects {
-  grid-column: 1/5; }
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .heroContainerCTAProjects p {
     margin-bottom: 4rem; }
   @media (min-width: 768px) {

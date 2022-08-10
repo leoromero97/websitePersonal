@@ -209,19 +209,25 @@
 .carousel-inner,
 .carousel-item {
   height: 100%;
+  width: 100%;
 
   @media (min-width: $min-width-desktop) {
     min-height: 40rem;
   }
 
   img {
+    height: 25.6rem;
     object-fit: fill;
-    height: 100%;
+    min-width: 33rem;
 
     @media (min-width: $min-width-desktop) {
       min-height: 40rem;
     }
   } 
+}
+
+.carousel-text-control{
+  color: transparent;
 }
 
 .containerWorking {
